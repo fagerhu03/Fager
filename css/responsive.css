@@ -129,6 +129,36 @@
     display: none;
   }
 
+  .brand-name {
+    font-size: 0.95rem;
+    white-space: nowrap;
+  }
+
+  .nav-wrapper {
+    display: contents;
+  }
+
+  .nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    flex-shrink: 0;
+  }
+
+  .theme-toggle-btn {
+    width: 2.25rem;
+    height: 2.25rem;
+    font-size: 1rem;
+  }
+
+  .mobile-nav-toggle {
+    display: inline-flex !important;
+    width: 2.25rem;
+    height: 2.25rem;
+    font-size: 1.25rem;
+    flex-shrink: 0;
+  }
+
   .nav-actions .btn-sm {
     display: none !important; /* Hidden in header, visible in mobile drawer */
   }
