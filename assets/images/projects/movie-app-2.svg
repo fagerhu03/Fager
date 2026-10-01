@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 375 812" width="100%" height="100%">
+  <defs>
+    <linearGradient id="detailHero" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1e1b4b"/>
+      <stop offset="60%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#0b0f19"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="375" height="812" fill="#0b0f19"/>
+
+  <!-- Hero Backdrop with Floating Controls -->
+  <rect width="375" height="280" fill="url(#detailHero)"/>
+  
+  <g transform="translate(20, 52)">
+    <circle cx="18" cy="18" r="18" fill="rgba(15,23,42,0.8)"/>
+    <text x="18" y="23" font-family="sans-serif" font-size="16" fill="#fff" text-anchor="middle">←</text>
+
+    <!-- Favorite active button -->
+    <circle cx="317" cy="18" r="18" fill="rgba(15,23,42,0.8)"/>
+    <text x="317" y="23" font-family="sans-serif" font-size="14" fill="#e11d48" text-anchor="middle">♥</text>
+  </g>
+
+  <!-- Poster and Title Stack -->
+  <g transform="translate(24, 200)">
+    <!-- Movie Poster thumbnail -->
+    <rect width="100" height="150" rx="14" fill="#312e81" stroke="#4338ca" stroke-width="2" filter="drop-shadow(0 10px 20px rgba(0,0,0,0.6))"/>
+    <text x="50" y="80" font-family="sans-serif" font-size="28" fill="#a5b4fc" text-anchor="middle">🎬</text>
+
+    <!-- Info right side -->
+    <g transform="translate(115, 20)">
+      <text x="0" y="20" font-family="'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="20" fill="#ffffff">Interstellar</text>
+      <text x="0" y="38" font-family="sans-serif" font-size="12" fill="#38bdf8">Christopher Nolan • 2014</text>
+      <text x="0" y="58" font-family="sans-serif" font-weight="700" font-size="12" fill="#eab308">★ 8.9 / 10 <tspan fill="#64748b" font-weight="400">(1.9M votes)</tspan></text>
+      
+      <!-- Tags -->
+      <g transform="translate(0, 72)">
+        <rect width="52" height="22" rx="6" fill="#1e293b"/>
+        <text x="26" y="15" font-family="sans-serif" font-size="10" fill="#94a3b8" text-anchor="middle">Sci-Fi</text>
+        
+        <rect x="58" y="0" width="56" height="22" rx="6" fill="#1e293b"/>
+        <text x="86" y="15" font-family="sans-serif" font-size="10" fill="#94a3b8" text-anchor="middle">Adventure</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Overview & Synopsis -->
+  <g transform="translate(24, 380)">
+    <text x="0" y="16" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="15" fill="#f8fafc">Storyline &amp; Overview</text>
+    <text x="0" y="40" font-family="sans-serif" font-size="12" fill="#94a3b8" line-height="1.5">When Earth becomes uninhabitable in the future, a farmer</text>
+    <text x="0" y="58" font-family="sans-serif" font-size="12" fill="#94a3b8">and ex-NASA pilot, Joseph Cooper, is tasked to pilot a</text>
+    <text x="0" y="76" font-family="sans-serif" font-size="12" fill="#94a3b8">spacecraft along with a team of researchers through a wormhole.</text>
+
+    <!-- Cast row -->
+    <text x="0" y="115" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="14" fill="#f8fafc">Top Cast</text>
+    <g transform="translate(0, 130)">
+      <circle cx="24" cy="24" r="22" fill="#1e293b"/>
+      <text x="24" y="28" font-family="sans-serif" font-size="10" fill="#cbd5e1" text-anchor="middle">MC</text>
+      <text x="24" y="60" font-family="sans-serif" font-size="9" fill="#94a3b8" text-anchor="middle">M. McConaughey</text>
+
+      <circle cx="95" cy="24" r="22" fill="#1e293b"/>
+      <text x="95" y="28" font-family="sans-serif" font-size="10" fill="#cbd5e1" text-anchor="middle">AH</text>
+      <text x="95" y="60" font-family="sans-serif" font-size="9" fill="#94a3b8" text-anchor="middle">Anne Hathaway</text>
+
+      <circle cx="166" cy="24" r="22" fill="#1e293b"/>
+      <text x="166" y="28" font-family="sans-serif" font-size="10" fill="#cbd5e1" text-anchor="middle">JC</text>
+      <text x="166" y="60" font-family="sans-serif" font-size="9" fill="#94a3b8" text-anchor="middle">Jessica Chastain</text>
+
+      <circle cx="237" cy="24" r="22" fill="#1e293b"/>
+      <text x="237" y="28" font-family="sans-serif" font-size="10" fill="#cbd5e1" text-anchor="middle">MC</text>
+      <text x="237" y="60" font-family="sans-serif" font-size="9" fill="#94a3b8" text-anchor="middle">Michael Caine</text>
+    </g>
+
+    <!-- Cache notification banner -->
+    <g transform="translate(0, 220)">
+      <rect width="327" height="48" rx="12" fill="#064e3b" stroke="#059669" stroke-width="1"/>
+      <text x="16" y="28" font-family="sans-serif" font-weight="600" font-size="11" fill="#a7f3d0">✓ Saved to Offline Favorites (Cached via REST API)</text>
+    </g>
+  </g>
+
+  <!-- Bottom CTA button -->
+  <g transform="translate(24, 720)">
+    <rect width="327" height="48" rx="14" fill="#0284c7"/>
+    <text x="163" y="30" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="14" fill="#ffffff" text-anchor="middle">▶ Watch Now / Trailer</text>
+  </g>
+</svg>

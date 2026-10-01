@@ -1,0 +1,329 @@
+/**
+ * Responsive Design & Mobile Adaptations
+ */
+
+/* ==========================================================================
+   Breakpoints: Max-width 1024px (Tablets & Small Laptops)
+   ========================================================================== */
+@media (max-width: 1024px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-10);
+    text-align: center;
+  }
+
+  .hero-badge,
+  .hero-actions,
+  .hero-socials {
+    justify-content: center;
+  }
+
+  .hero-copy {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .featured-project-card {
+    grid-template-columns: 1fr;
+    gap: var(--space-8);
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-highlights-strip {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-6);
+  }
+
+  .hero-highlight-item:nth-child(2) {
+    border-right: none;
+  }
+}
+
+/* ==========================================================================
+   Breakpoints: Max-width 768px (Mobile & Small Tablets)
+   ========================================================================== */
+@media (max-width: 768px) {
+  :root {
+    --nav-height: 4rem;
+  }
+
+  .hero-bg-accent {
+    display: none !important;
+  }
+
+  .section {
+    padding-top: var(--space-12);
+    padding-bottom: var(--space-12);
+  }
+
+  .section-title {
+    font-size: var(--text-2xl);
+  }
+
+  /* Mobile Navigation Drawer */
+  .nav-wrapper {
+    display: contents;
+  }
+
+  .nav-actions {
+    flex-shrink: 0;
+  }
+
+  .mobile-nav-toggle {
+    display: inline-flex !important;
+    flex-shrink: 0;
+  }
+
+  .nav-menu {
+    position: fixed;
+    top: var(--nav-height);
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--bg-surface);
+    flex-direction: column;
+    align-items: stretch;
+    padding: var(--space-6) var(--space-6) var(--space-12);
+    gap: var(--space-2);
+    border-top: 1px solid var(--border-subtle);
+    transform: translateY(-100%);
+    opacity: 0;
+    visibility: hidden;
+    transition: transform var(--transition-normal), opacity var(--transition-normal), visibility var(--transition-normal);
+    overflow-y: auto;
+    z-index: 850;
+  }
+
+  .nav-menu.active {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .nav-link {
+    font-size: var(--text-base);
+    padding: 0.85rem 1rem;
+    border-radius: var(--radius-lg);
+    display: block;
+    width: 100%;
+  }
+
+  .nav-link:hover,
+  .nav-link.active {
+    background: var(--bg-surface-sunken);
+  }
+
+  .nav-link.active::after {
+    display: none;
+  }
+
+  /* Navbar mobile adaptations */
+  .brand-role {
+    display: none;
+  }
+
+  .nav-actions .btn-sm {
+    display: none !important; /* Hidden in header, visible in mobile drawer */
+  }
+
+  .nav-menu-cta {
+    margin-top: var(--space-6);
+    display: block !important;
+    width: 100%;
+  }
+
+  .nav-menu-cta .btn {
+    width: 100%;
+  }
+
+  /* Hero Mobile Title & Actions */
+  .hero-name {
+    font-size: clamp(1.65rem, 6.5vw, 2.15rem);
+    line-height: 1.15;
+    word-break: normal;
+    overflow-wrap: break-word;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    width: 100%;
+    gap: var(--space-3);
+  }
+
+  .hero-actions .btn {
+    width: 100%;
+  }
+
+  .hero-socials {
+    justify-content: center;
+  }
+
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  /* Cards mobile padding */
+  .card,
+  .featured-project-card,
+  .project-card,
+  .education-card,
+  .contact-form-card,
+  .personal-skills-card {
+    padding: 1.25rem 1rem;
+  }
+
+  .skills-categories-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-4);
+  }
+
+  /* Contact Cards Mobile */
+  .contact-card {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-3);
+  }
+
+  .contact-card .btn-sm,
+  .contact-action-badge {
+    align-self: flex-start;
+  }
+
+  /* Projects Grid Mobile */
+  .projects-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-6);
+  }
+
+  .about-pillars-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .case-study-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .modal-dialog {
+    padding: var(--space-5);
+  }
+
+  /* Experience Timeline Mobile */
+  .experience-timeline {
+    padding-left: 1.5rem;
+  }
+
+  .timeline-dot {
+    left: -1.5rem;
+    top: 20px;
+    width: 14px;
+    height: 14px;
+  }
+
+  .timeline-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .timeline-period {
+    margin-top: 0.25rem;
+  }
+
+  /* Highlights Strip Mobile */
+  .hero-highlights-strip {
+    grid-template-columns: 1fr 1fr;
+    padding: var(--space-4);
+  }
+
+  .hero-highlight-item {
+    border-right: none;
+    padding: var(--space-2);
+  }
+
+  /* Phone Mockup max-width on mobile */
+  .phone-mockup-wrapper {
+    max-width: 260px;
+    width: 100%;
+  }
+
+  .phone-frame {
+    border-radius: 40px;
+    padding: 9px;
+  }
+
+  .phone-screen {
+    border-radius: 32px;
+  }
+
+  /* Footer Mobile */
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+    gap: var(--space-4);
+  }
+
+  .footer-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--space-4);
+  }
+}
+
+/* ==========================================================================
+   Breakpoints: Max-width 480px (Small Phones)
+   ========================================================================== */
+@media (max-width: 480px) {
+  :root {
+    --container-pad: 1rem;
+  }
+
+  .hero-name {
+    font-size: 2rem;
+  }
+
+  .hero-photo-frame {
+    max-width: 280px;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .hero-actions .btn {
+    width: 100%;
+  }
+
+  .hero-highlights-strip {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .hero-highlight-item {
+    border-bottom: 1px solid var(--border-subtle);
+  }
+
+  .hero-highlight-item:last-child {
+    border-bottom: none;
+  }
+
+  .phone-mockup-wrapper {
+    max-width: 260px;
+  }
+
+  .project-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .project-actions .btn {
+    width: 100%;
+  }
+}

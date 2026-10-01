@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 375 812" width="100%" height="100%">
+  <!-- Background -->
+  <rect width="375" height="812" fill="#0f172a"/>
+
+  <!-- Top App Bar -->
+  <g transform="translate(24, 52)">
+    <circle cx="16" cy="16" r="16" fill="#1e293b"/>
+    <text x="16" y="21" font-family="sans-serif" font-size="16" fill="#fff" text-anchor="middle">←</text>
+    <text x="50" y="22" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="18" fill="#f8fafc">My Cart (3 Items)</text>
+  </g>
+
+  <!-- Cart Items List -->
+  <g transform="translate(24, 110)">
+    <!-- Cart Item 1 -->
+    <g transform="translate(0, 0)">
+      <rect width="327" height="90" rx="16" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+      <rect x="12" y="15" width="60" height="60" rx="10" fill="#151d2f"/>
+      <text x="42" y="52" font-family="sans-serif" font-size="28" fill="#ffffff" text-anchor="middle">🎧</text>
+      
+      <text x="86" y="34" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="13" fill="#f8fafc">Pro Wireless ANC</text>
+      <text x="86" y="52" font-family="sans-serif" font-size="11" fill="#94a3b8">Space Gray • Qty: 1</text>
+      <text x="86" y="74" font-family="sans-serif" font-weight="800" font-size="13" fill="#38bdf8">$129.99</text>
+
+      <!-- Stepper -->
+      <rect x="235" y="48" width="80" height="28" rx="8" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+      <text x="247" y="66" font-family="sans-serif" font-size="14" fill="#94a3b8">−</text>
+      <text x="275" y="66" font-family="sans-serif" font-weight="700" font-size="12" fill="#fff" text-anchor="middle">1</text>
+      <text x="303" y="66" font-family="sans-serif" font-size="14" fill="#94a3b8">+</text>
+    </g>
+
+    <!-- Cart Item 2 -->
+    <g transform="translate(0, 102)">
+      <rect width="327" height="90" rx="16" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+      <rect x="12" y="15" width="60" height="60" rx="10" fill="#151d2f"/>
+      <text x="42" y="52" font-family="sans-serif" font-size="28" fill="#ffffff" text-anchor="middle">⌚</text>
+      
+      <text x="86" y="34" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="13" fill="#f8fafc">Smartwatch Pulse</text>
+      <text x="86" y="52" font-family="sans-serif" font-size="11" fill="#94a3b8">Midnight Black • Qty: 2</text>
+      <text x="86" y="74" font-family="sans-serif" font-weight="800" font-size="13" fill="#38bdf8">$179.00</text>
+
+      <rect x="235" y="48" width="80" height="28" rx="8" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+      <text x="247" y="66" font-family="sans-serif" font-size="14" fill="#94a3b8">−</text>
+      <text x="275" y="66" font-family="sans-serif" font-weight="700" font-size="12" fill="#fff" text-anchor="middle">2</text>
+      <text x="303" y="66" font-family="sans-serif" font-size="14" fill="#94a3b8">+</text>
+    </g>
+  </g>
+
+  <!-- Delivery Address Mockup -->
+  <g transform="translate(24, 320)">
+    <rect width="327" height="74" rx="14" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+    <text x="16" y="28" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="13" fill="#f8fafc">📍 Shipping Destination</text>
+    <text x="16" y="46" font-family="sans-serif" font-size="11" fill="#94a3b8">Giza, Egypt • Primary Address</text>
+    <text x="290" y="38" font-family="sans-serif" font-size="12" fill="#38bdf8">Edit</text>
+  </g>
+
+  <!-- Checkout Summary Card -->
+  <g transform="translate(24, 415)">
+    <rect width="327" height="175" rx="18" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+    <g transform="translate(20, 24)">
+      <text x="0" y="16" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="14" fill="#f8fafc">Order Summary</text>
+      
+      <text x="0" y="44" font-family="sans-serif" font-size="12" fill="#94a3b8">Subtotal</text>
+      <text x="287" y="44" font-family="sans-serif" font-weight="600" font-size="12" fill="#f8fafc" text-anchor="end">$308.99</text>
+      
+      <text x="0" y="68" font-family="sans-serif" font-size="12" fill="#94a3b8">Estimated Shipping</text>
+      <text x="287" y="68" font-family="sans-serif" font-weight="600" font-size="12" fill="#10b981" text-anchor="end">Free</text>
+      
+      <line x1="0" y1="84" x2="287" y2="84" stroke="#334155" stroke-width="1"/>
+      
+      <text x="0" y="112" font-family="'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="15" fill="#f8fafc">Total Amount</text>
+      <text x="287" y="112" font-family="'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="16" fill="#38bdf8" text-anchor="end">$308.99</text>
+    </g>
+  </g>
+
+  <!-- Checkout Interface Button (UI layout only, noting no live payment processing implied) -->
+  <g transform="translate(24, 610)">
+    <rect width="327" height="52" rx="16" fill="#0284c7"/>
+    <text x="163" y="32" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="14" fill="#ffffff" text-anchor="middle">Proceed to Checkout UI ➔</text>
+  </g>
+
+  <!-- Note Badge -->
+  <g transform="translate(24, 675)">
+    <text x="163" y="14" font-family="sans-serif" font-size="10" fill="#64748b" text-anchor="middle">Responsive E-Commerce UI &amp; Firebase Backend Architecture</text>
+  </g>
+
+  <!-- Bottom Home Bar -->
+  <rect x="120" y="795" width="135" height="4" rx="2" fill="#475569"/>
+</svg>

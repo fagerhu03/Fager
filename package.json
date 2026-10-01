@@ -1,0 +1,20 @@
+{
+  "name": "fager-portfolio",
+  "version": "1.0.0",
+  "description": "Professional portfolio website for Fager Hussein Ahmed — Flutter Developer & Computer Engineering Graduate",
+  "main": "index.html",
+  "scripts": {
+    "dev": "node server.js",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "flutter",
+    "portfolio",
+    "developer",
+    "mobile",
+    "dart",
+    "engineer"
+  ],
+  "author": "Fager Hussein Ahmed",
+  "license": "MIT"
+}

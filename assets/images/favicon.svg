@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="favGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0284c7"/>
+      <stop offset="100%" stop-color="#2563eb"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="16" fill="#0f172a"/>
+  <!-- Flutter-inspired blue accent geometric wings -->
+  <path d="M 38 12 L 18 32 L 25 39 L 52 12 Z" fill="#38bdf8"/>
+  <path d="M 38 32 L 26 44 L 38 56 L 50 56 L 38 44 L 50 32 Z" fill="#0284c7"/>
+  <path d="M 38 44 L 26 44 L 38 32 Z" fill="#0369a1"/>
+</svg>

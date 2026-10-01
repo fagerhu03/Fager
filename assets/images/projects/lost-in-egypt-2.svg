@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 375 812" width="100%" height="100%">
+  <defs>
+    <linearGradient id="scanGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#0284c7" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <!-- Dark Camera Viewfinder Background -->
+  <rect width="375" height="812" fill="#030712"/>
+
+  <!-- Top Controls -->
+  <g transform="translate(20, 50)">
+    <circle cx="20" cy="20" r="18" fill="rgba(15,23,42,0.7)"/>
+    <text x="20" y="25" font-family="sans-serif" font-size="16" fill="#fff" text-anchor="middle">←</text>
+    
+    <!-- Title -->
+    <text x="187" y="24" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="14" fill="#ffffff" text-anchor="middle">AI Landmark Recognition</text>
+    
+    <circle cx="315" cy="20" r="18" fill="rgba(15,23,42,0.7)"/>
+    <!-- Flash icon -->
+    <text x="315" y="24" font-family="sans-serif" font-size="12" fill="#facc15" text-anchor="middle">⚡</text>
+  </g>
+
+  <!-- Viewfinder Frame -->
+  <g transform="translate(30, 110)">
+    <!-- Simulated Camera Scene: Great Sphinx of Giza -->
+    <rect width="315" height="380" rx="24" fill="#1e293b"/>
+    <!-- Desert ground -->
+    <path d="M 0 280 Q 80 260 160 270 T 315 250 L 315 380 L 0 380 Z" fill="#78350f" opacity="0.6"/>
+    <!-- Distant pyramid -->
+    <polygon points="230,160 160,260 300,260" fill="#92400e" opacity="0.7"/>
+    <!-- Great Sphinx silhouette outline -->
+    <path d="M 60 240 Q 70 200 90 190 Q 110 180 130 190 Q 150 200 170 230 Q 200 240 240 250 L 240 290 L 50 290 Z" fill="#b45309" opacity="0.85"/>
+    
+    <!-- AI Bounding Box & Corners -->
+    <rect x="35" y="150" width="245" height="150" rx="8" fill="url(#scanGrad)" stroke="#38bdf8" stroke-width="2" stroke-dasharray="8 6"/>
+    
+    <!-- Corner brackets -->
+    <path d="M 25 140 L 45 140 M 25 140 L 25 160" stroke="#38bdf8" stroke-width="3" fill="none"/>
+    <path d="M 290 140 L 270 140 M 290 140 L 290 160" stroke="#38bdf8" stroke-width="3" fill="none"/>
+    <path d="M 25 310 L 45 310 M 25 310 L 25 290" stroke="#38bdf8" stroke-width="3" fill="none"/>
+    <path d="M 290 310 L 270 310 M 290 310 L 290 290" stroke="#38bdf8" stroke-width="3" fill="none"/>
+
+    <!-- AI Tag overlay -->
+    <g transform="translate(45, 125)">
+      <rect width="180" height="26" rx="6" fill="#0284c7"/>
+      <text x="10" y="17" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="11" fill="#ffffff">Great Sphinx of Giza</text>
+      <rect x="135" y="4" width="38" height="18" rx="4" fill="rgba(255,255,255,0.2)"/>
+      <text x="154" y="16" font-family="sans-serif" font-weight="800" font-size="9" fill="#ffffff" text-anchor="middle">98.4%</text>
+    </g>
+
+    <!-- Scan Line Animation Indicator -->
+    <line x1="35" y1="225" x2="280" y2="225" stroke="#38bdf8" stroke-width="2"/>
+    <circle cx="157" cy="225" r="4" fill="#ffffff"/>
+  </g>
+
+  <!-- Detailed AI Result Card Sheet -->
+  <g transform="translate(20, 510)">
+    <rect width="335" height="225" rx="20" fill="#0f172a" stroke="#1e293b" stroke-width="1.5"/>
+    
+    <g transform="translate(18, 20)">
+      <text x="0" y="14" font-family="'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="16" fill="#ffffff">The Great Sphinx of Giza</text>
+      <text x="0" y="32" font-family="sans-serif" font-size="11" fill="#38bdf8">Old Kingdom • 4th Dynasty (c. 2500 BC)</text>
+      
+      <text x="0" y="55" font-family="sans-serif" font-size="11" fill="#94a3b8">A limestone statue of a mythical creature with</text>
+      <text x="0" y="70" font-family="sans-serif" font-size="11" fill="#94a3b8">the body of a lion and the head of a human,</text>
+      <text x="0" y="85" font-family="sans-serif" font-size="11" fill="#94a3b8">generally believed to represent Pharaoh Khafre.</text>
+
+      <!-- Audio Guide & AR Actions -->
+      <g transform="translate(0, 105)">
+        <rect width="140" height="38" rx="10" fill="#0284c7"/>
+        <text x="70" y="23" font-family="sans-serif" font-weight="700" font-size="11" fill="#ffffff" text-anchor="middle">▶ Audio Guide (3m)</text>
+
+        <rect x="150" y="0" width="140" height="38" rx="10" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+        <text x="220" y="23" font-family="sans-serif" font-weight="700" font-size="11" fill="#38bdf8" text-anchor="middle">🗺 Navigate Route</text>
+      </g>
+
+      <!-- Multilingual Audio Available -->
+      <text x="0" y="165" font-family="sans-serif" font-size="10" fill="#64748b">Available in: English, Arabic, French, German, Spanish</text>
+    </g>
+  </g>
+
+  <!-- Bottom Home Bar -->
+  <rect x="120" y="795" width="135" height="4" rx="2" fill="#475569"/>
+</svg>

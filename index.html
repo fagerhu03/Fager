@@ -1,0 +1,1728 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fager Hussein Ahmed | Flutter Developer &amp; Computer &amp; Software Engineering Graduate</title>
+  
+  <!-- SEO & Social Metadata -->
+  <meta name="description" content="Portfolio of Fager Hussein Ahmed — Computer &amp; Software Engineering graduate specializing in Flutter cross-platform mobile development, Firebase, Clean Architecture, AI, Computer Vision, and Cloud technologies.">
+  <meta name="keywords" content="Fager Hussein Ahmed, Flutter Developer, Mobile Developer, Dart, Firebase, Computer Engineering, Software Engineering, AI, Computer Vision, OpenCV, Egypt">
+  <meta name="author" content="Fager Hussein Ahmed">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Fager Hussein Ahmed | Flutter Developer &amp; Computer Engineer">
+  <meta property="og:description" content="Explore Flutter mobile applications, graduation project 'Lost in Egypt', AI computer vision models, and engineering training portfolio.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://fagerhu03.github.io/WebPortfolio/">
+  <meta property="og:image" content="assets/images/favicon.svg">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Fager Hussein Ahmed | Flutter Developer">
+  <meta name="twitter:description" content="Flutter mobile apps, Clean Architecture, Firebase, and AI engineering portfolio.">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+
+  <!-- Google Fonts: Plus Jakarta Sans & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/sections.css">
+  <link rel="stylesheet" href="css/responsive.css">
+
+  <!-- Immediate Theme Initializer (Prevents Flash of Wrong Theme) -->
+  <script>
+    (function() {
+      try {
+        var params = new URLSearchParams(window.location.search);
+        var qTheme = params.get('theme');
+        var savedTheme = localStorage.getItem('fager_portfolio_theme');
+        var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+        var theme = (qTheme === 'light' || qTheme === 'dark') ? qTheme : (savedTheme ? savedTheme : (prefersDark ? 'dark' : 'light'));
+        document.documentElement.setAttribute('data-theme', theme);
+      } catch (e) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+      }
+    })();
+  </script>
+</head>
+<body>
+
+  <!-- Accessible Skip to Main Content Link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- ========================================================================
+       Header / Sticky Navigation Bar
+       ======================================================================== -->
+  <header class="site-header" role="banner">
+    <div class="container nav-container">
+      <a href="#home" class="brand-link" aria-label="Fager Hussein Ahmed - Return to top of page">
+        <div class="brand-logo" aria-hidden="true">FA</div>
+        <div class="brand-text">
+          <span class="brand-name">Fager Hussein</span>
+          <span class="brand-role">Flutter Developer</span>
+        </div>
+      </a>
+
+      <!-- Navigation Menu Links -->
+      <nav class="nav-wrapper" role="navigation" aria-label="Main Navigation">
+        <ul class="nav-menu" id="primary-navigation">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#experience" class="nav-link">Experience &amp; Training</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+          <li class="nav-menu-cta" style="display: none;">
+            <a href="assets/Fager_Hussein_Ahmed_CV.pdf" download="Fager_Hussein_Ahmed_CV.pdf" class="btn btn-primary btn-sm">
+              <span>📄 Download CV</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Navigation Actions -->
+      <div class="nav-actions">
+        <!-- Theme Toggle Button -->
+        <button type="button" class="theme-toggle-btn" aria-label="Toggle light or dark theme" title="Toggle theme">
+          ☀️
+        </button>
+
+        <!-- Download CV Header Button -->
+        <a href="assets/Fager_Hussein_Ahmed_CV.pdf" download="Fager_Hussein_Ahmed_CV.pdf" class="btn btn-primary btn-sm">
+          <span>📄 Download CV</span>
+        </a>
+
+        <!-- Mobile Navigation Hamburger Toggle -->
+        <button type="button" class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false" aria-label="Open navigation menu">
+          ☰
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========================================================================
+       Main Content Container
+       ======================================================================== -->
+  <main id="main-content" role="main">
+
+    <!-- ======================================================================
+         1. HERO SECTION
+         ====================================================================== -->
+    <section id="home" class="section hero-section" aria-label="Introduction">
+      <div class="hero-bg-accent" aria-hidden="true"></div>
+
+      <div class="container">
+        <div class="hero-grid">
+          <!-- Hero Text Details -->
+          <div class="hero-content">
+            <div class="hero-badge">
+              <span class="hero-badge-pulse" aria-hidden="true"></span>
+              <span>Computer &amp; Software Engineering Graduate</span>
+            </div>
+
+            <h1 class="hero-name">Fager Hussein Ahmed</h1>
+
+            <p class="hero-headline">
+              Flutter Developer | Computer &amp; Software Engineering Graduate
+            </p>
+
+            <p class="hero-copy">
+              I build intuitive mobile applications with Flutter, Firebase, and clean architecture, with additional experience in AI, computer vision, and cloud technologies.
+            </p>
+
+            <!-- CTA Actions -->
+            <div class="hero-actions">
+              <a href="#projects" class="btn btn-primary btn-lg">
+                <span>View Projects</span>
+                <span aria-hidden="true">➔</span>
+              </a>
+
+              <a href="assets/Fager_Hussein_Ahmed_CV.pdf" download="Fager_Hussein_Ahmed_CV.pdf" class="btn btn-secondary btn-lg">
+                <span>📄 Download CV</span>
+              </a>
+
+              <a href="#contact" class="btn btn-outline btn-lg">
+                <span>Contact Me</span>
+              </a>
+            </div>
+
+            <!-- Social Links Strip -->
+            <div class="hero-socials">
+              <a href="https://github.com/fagerhu03" target="_blank" rel="noopener noreferrer" class="hero-social-link" aria-label="GitHub Profile (opens in new tab)">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                <span>GitHub</span>
+              </a>
+
+              <a href="https://www.linkedin.com/in/fagerhu" target="_blank" rel="noopener noreferrer" class="hero-social-link" aria-label="LinkedIn Profile (opens in new tab)">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                <span>LinkedIn</span>
+              </a>
+
+              <a href="https://wa.me/201552148113" target="_blank" rel="noopener noreferrer" class="hero-social-link" aria-label="Chat on WhatsApp (opens in new tab)">
+                <span aria-hidden="true">💬</span>
+                <span>WhatsApp</span>
+              </a>
+
+              <a href="https://fagerhu03.github.io/WebPortfolio/" target="_blank" rel="noopener noreferrer" class="hero-social-link" aria-label="Web Portfolio site (opens in new tab)">
+                <span aria-hidden="true">🌐</span>
+                <span>WebPortfolio</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Hero Profile Photo Frame -->
+          <div class="hero-photo-wrapper">
+            <div class="hero-photo-frame">
+              <div class="hero-photo-inner">
+                <!-- Profile Image with automatic fallback to vector SVG placeholder -->
+                <img 
+                  src="assets/images/profile.jpg" 
+                  onerror="this.onerror=null; this.src='assets/images/profile-placeholder.svg';" 
+                  alt="Portrait photo of Fager Hussein Ahmed" 
+                  class="hero-photo-img"
+                  width="400"
+                  height="400"
+                  loading="eager"
+                >
+              </div>
+
+              <!-- Status Pill -->
+              <div class="hero-status-pill">
+                <span style="color:#10b981; font-size:10px;">●</span>
+                <span>Flutter &amp; Mobile Specialist</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Quick Stats & Highlights Strip -->
+        <div class="hero-highlights-strip" role="region" aria-label="Key Highlights">
+          <div class="hero-highlight-item">
+            <span class="hero-highlight-num">5+</span>
+            <span class="hero-highlight-label">Flutter &amp; Mobile Projects</span>
+          </div>
+
+          <div class="hero-highlight-item">
+            <span class="hero-highlight-num">6</span>
+            <span class="hero-highlight-label">Industry Training Programs</span>
+          </div>
+
+          <div class="hero-highlight-item">
+            <span class="hero-highlight-num">2021–2026</span>
+            <span class="hero-highlight-label">B.Sc. Computer &amp; Software Eng.</span>
+          </div>
+
+          <div class="hero-highlight-item">
+            <span class="hero-highlight-num">AI &amp; CV</span>
+            <span class="hero-highlight-label">Computer Vision &amp; Cloud Exposure</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ======================================================================
+         2. ABOUT SECTION
+         ====================================================================== -->
+    <section id="about" class="section" aria-labelledby="about-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">About Me</span>
+          <h2 id="about-heading" class="section-title">Engineering Solid, Intuitive Mobile Experiences</h2>
+          <p class="section-subtitle">
+            A comprehensive background in Computer &amp; Software Engineering, applying clean architecture, state management, and modern cross-platform engineering.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <!-- Biography Narrative -->
+          <div class="card about-bio-card">
+            <h3 style="font-size: var(--text-xl); font-weight: 800;">Background &amp; Approach</h3>
+            
+            <p class="about-bio-text">
+              I am a Computer &amp; Software Engineering graduate from Misr University for Science and Technology with a dedicated focus on Flutter and cross-platform mobile application development. My engineering training spans building production-simulated applications with Firebase, RESTful APIs, Hive local persistence, and Clean Architecture.
+            </p>
+
+            <p class="about-bio-text">
+              In addition to core mobile development, I possess practical exposure to artificial intelligence, computer vision (OpenCV, Haar cascades, HOG+SVM), IoT microcontroller integration (Arduino, ESP), cloud computing on Google Cloud Platform, and automated software testing with Selenium and JIRA.
+            </p>
+
+            <p class="about-bio-text">
+              I am passionate about crafting fluid, user-centered mobile interfaces backed by maintainable, modular code that solves practical problems efficiently.
+            </p>
+
+            <!-- 4 Specialization Pillars -->
+            <div class="about-pillars-grid">
+              <div class="about-pillar-card">
+                <div class="about-pillar-icon" aria-hidden="true">📱</div>
+                <h4 class="about-pillar-title">Flutter &amp; Dart Mobile</h4>
+                <p class="about-pillar-desc">Cross-platform Android &amp; iOS apps with 60fps animations, Clean Architecture, and robust state management.</p>
+              </div>
+
+              <div class="about-pillar-card">
+                <div class="about-pillar-icon" aria-hidden="true">🔥</div>
+                <h4 class="about-pillar-title">Firebase &amp; Offline Storage</h4>
+                <p class="about-pillar-desc">Real-time Cloud Firestore synchronization, Firebase Auth security, and ultra-fast local persistence with Hive.</p>
+              </div>
+
+              <div class="about-pillar-card">
+                <div class="about-pillar-icon" aria-hidden="true">🤖</div>
+                <h4 class="about-pillar-title">AI &amp; Computer Vision</h4>
+                <p class="about-pillar-desc">Real-time object detection using OpenCV, Haar cascades, HOG+SVM, and NLP intent classification pipelines.</p>
+              </div>
+
+              <div class="about-pillar-card">
+                <div class="about-pillar-icon" aria-hidden="true">☁️</div>
+                <h4 class="about-pillar-title">Cloud, Testing &amp; IoT</h4>
+                <p class="about-pillar-desc">Google Cloud Platform deployments, automated regression testing with Selenium, and Arduino/ESP hardware integration.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Academic & Professional Credentials -->
+          <div class="about-facts-card">
+            <h3 style="font-size: var(--text-lg); font-weight: 800; margin-bottom: var(--space-2);">Quick Credentials</h3>
+
+            <div class="about-fact-row">
+              <div class="about-fact-icon" aria-hidden="true">🎓</div>
+              <div class="about-fact-content">
+                <h5>Degree</h5>
+                <p>B.Sc. in Computer &amp; Software Engineering</p>
+              </div>
+            </div>
+
+            <div class="about-fact-row">
+              <div class="about-fact-icon" aria-hidden="true">🏛️</div>
+              <div class="about-fact-content">
+                <h5>University</h5>
+                <p>Misr University for Science and Technology (Giza, EG)</p>
+              </div>
+            </div>
+
+            <div class="about-fact-row">
+              <div class="about-fact-icon" aria-hidden="true">📅</div>
+              <div class="about-fact-content">
+                <h5>Academic Period</h5>
+                <p>2021 – 2026 (Graduate)</p>
+              </div>
+            </div>
+
+            <div class="about-fact-row">
+              <div class="about-fact-icon" aria-hidden="true">📍</div>
+              <div class="about-fact-content">
+                <h5>Location</h5>
+                <p>Giza, Egypt</p>
+              </div>
+            </div>
+
+            <div class="about-fact-row">
+              <div class="about-fact-icon" aria-hidden="true">🏆</div>
+              <div class="about-fact-content">
+                <h5>Capstone Project</h5>
+                <p>Lost in Egypt — AI Smart Tourism Application</p>
+              </div>
+            </div>
+
+            <div class="about-fact-row">
+              <div class="about-fact-icon" aria-hidden="true">🎯</div>
+              <div class="about-fact-content">
+                <h5>Primary Focus</h5>
+                <p>Mobile Application Engineering (Flutter / Firebase)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ======================================================================
+         3. SKILLS SECTION
+         ====================================================================== -->
+    <section id="skills" class="section" aria-labelledby="skills-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Technical Competencies</span>
+          <h2 id="skills-heading" class="section-title">Skills &amp; Technical Capabilities</h2>
+          <p class="section-subtitle">
+            Organized by specialized engineering domain according to the official curriculum and hands-on training.
+          </p>
+        </div>
+
+        <!-- 8 Skill Categories Grid -->
+        <div class="skills-categories-grid">
+          <!-- 1. Programming Languages -->
+          <div class="skill-category-card">
+            <div class="skill-category-header">
+              <span class="skill-category-icon" aria-hidden="true">💻</span>
+              <h3 class="skill-category-title">Programming Languages</h3>
+            </div>
+            <div class="skill-chips-list">
+              <div class="skill-chip">
+                <span class="skill-chip-name">Dart</span>
+                <span class="skill-chip-note">Primary Mobile</span>
+              </div>
+              <div class="skill-chip">
+                <span class="skill-chip-name">Python</span>
+                <span class="skill-chip-note">AI, CV &amp; APIs</span>
+              </div>
+              <div class="skill-chip">
+                <span class="skill-chip-name">C++</span>
+                <span class="skill-chip-note">Core Engineering</span>
+              </div>
+              <div class="skill-chip">
+                <span class="skill-chip-name">JavaScript</span>
+                <span class="skill-chip-note">Web &amp; Node</span>
+              </div>
+              <div class="skill-chip">
+                <span class="skill-chip-name">HTML / CSS</span>
+                <span class="skill-chip-note">Markup &amp; Styling</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2. Mobile Development -->
+          <div class="skill-category-card">
+            <div class="skill-category-header">
+              <span class="skill-category-icon" aria-hidden="true">📱</span>
+              <h3 class="skill-category-title">Mobile Development</h3>
+            </div>
+            <div class="skill-chips-list">
+              <div class="skill-chip">
+                <span class="skill-chip-name">Flutter</span>
+                <span class="skill-chip-note">Cross-Platform</span>
+              </div>
+              <div class="skill-chip">
+                <span class="skill-chip-name">Firebase Auth</span>
+                <span class="skill-chip-note">User Security</span>
+              </div>
+              <div class="skill-chip">
+                <span class="skill-chip-name">Cloud Firestore</span>
+                <span class="skill-chip-note">Real-Time Streams</span>
+              </div>
+              <div class="skill-chip">
+                <span class="skill-chip-name">Hive</span>
+                <span class="skill-chip-note">Fast Local Cache</span>
+              </div>
+              <div class="skill-chip">
+                <span class="skill-chip-name">pub.dev Packages</span>
+                <span class="skill-chip-note">UI/UX Libraries</span>
+              </div>
+              <div class="skill-chip">
+                <span class="skill-chip-name">State Management</span>
+                <span class="skill-chip-note">Architecture</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3. Backend & APIs -->
+          <div class="skill-category-card">
+            <div class="skill-category-header">
+              <span class="skill-category-icon" aria-hidden="true">🔌</span>
+              <h3 class="skill-category-title">Backend &amp; APIs</h3>
+            </div>
+            <div class="skill-chips-list">
+              <div class="skill-chip">
+                <span class="skill-chip-name">RESTful APIs</span>
+                <span class="skill-chip-note">Design &amp; Consume</span>
+              </div>
+              <div class="skill-chip">
+                <span class="skill-chip-name">FastAPI</span>
+                <span class="skill-chip-note">Python Microservices</span>
+              </div>
+              <div class="skill-chip">
+                <span class="skill-chip-name">Flask</span>
+                <span class="skill-chip-note">API Integration</span>
+              </div>
+              <div class="skill-chip">
+                <span class="skill-chip-name">Node.js Basics</span>
+                <span class="skill-chip-note">Server Runtime</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 4. Cloud Platforms -->
+          <div class="skill-category-card">
+            <div class="skill-category-header">
+              <span class="skill-category-icon" aria-hidden="true">☁️</span>
+              <h3 class="skill-category-title">Cloud Platforms</h3>
+            </div>
+            <div class="skill-chips-list">
+              <div class="skill-chip">
+                <span class="skill-chip-name">Google Cloud (GCP)</span>
+                <span class="skill-chip-note">Compute &amp; Storage</span>
+              </div>
+              <div class="skill-chip">
+                <span class="skill-chip-name">Firebase Hosting</span>
+                <span class="skill-chip-note">Web Applications</span>
+              </div>
+              <div class="skill-chip">
+                <span class="skill-chip-name">IAM Policies</span>
+                <span class="skill-chip-note">Cloud Security</span>
+              </div>
+              <div class="skill-chip">
+                <span class="skill-chip-name">Deployment Workflows</span>
+                <span class="skill-chip-note">Production Builds</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 5. Web Development -->
+          <div class="skill-category-card">
+            <div class="skill-category-header">
+              <span class="skill-category-icon" aria-hidden="true">🌐</span>
+              <h3 class="skill-category-title">Web Development</h3>
+            </div>
+            <div class="skill-chips-list">
+              <div class="skill-chip">
+                <span class="skill-chip-name">React</span>
+                <span class="skill-chip-note">UI Components</span>
+              </div>
+              <div class="skill-chip">
+                <span class="skill-chip-name">HTML5 / CSS3</span>
+                <span class="skill-chip-note">Semantic Markup</span>
+              </div>
+              <div class="skill-chip">
+                <span class="skill-chip-name">JavaScript (ES6+)</span>
+                <span class="skill-chip-note">Modern Logic</span>
+              </div>
+              <div class="skill-chip">
+                <span class="skill-chip-name">Responsive Design</span>
+                <span class="skill-chip-note">Mobile-First</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 6. AI, ML & Computer Vision -->
+          <div class="skill-category-card">
+            <div class="skill-category-header">
+              <span class="skill-category-icon" aria-hidden="true">🧠</span>
+              <h3 class="skill-category-title">AI &amp; Computer Vision</h3>
+            </div>
+            <div class="skill-chips-list">
+              <div class="skill-chip">
+                <span class="skill-chip-name">OpenCV</span>
+                <span class="skill-chip-note">Vision &amp; Streams</span>
+              </div>
+              <div class="skill-chip">
+                <span class="skill-chip-name">TensorFlow</span>
+                <span class="skill-chip-note">Model Pipelines</span>
+              </div>
+              <div class="skill-chip">
+                <span class="skill-chip-name">scikit-learn</span>
+                <span class="skill-chip-note">Classifiers &amp; Metrics</span>
+              </div>
+              <div class="skill-chip">
+                <span class="skill-chip-name">NLP (NLTK, spaCy)</span>
+                <span class="skill-chip-note">Intent Classification</span>
+              </div>
+              <div class="skill-chip">
+                <span class="skill-chip-name">Haar &amp; HOG+SVM</span>
+                <span class="skill-chip-note">Object Detection</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 7. IoT & Embedded Systems -->
+          <div class="skill-category-card">
+            <div class="skill-category-header">
+              <span class="skill-category-icon" aria-hidden="true">⚡</span>
+              <h3 class="skill-category-title">IoT &amp; Embedded</h3>
+            </div>
+            <div class="skill-chips-list">
+              <div class="skill-chip">
+                <span class="skill-chip-name">Arduino</span>
+                <span class="skill-chip-note">Microcontroller Dev</span>
+              </div>
+              <div class="skill-chip">
+                <span class="skill-chip-name">ESP Modules</span>
+                <span class="skill-chip-note">Wi-Fi &amp; Bluetooth</span>
+              </div>
+              <div class="skill-chip">
+                <span class="skill-chip-name">Sensors &amp; Actuators</span>
+                <span class="skill-chip-note">Hardware Telemetry</span>
+              </div>
+              <div class="skill-chip">
+                <span class="skill-chip-name">GSM Modules</span>
+                <span class="skill-chip-note">Cellular Connectivity</span>
+              </div>
+              <div class="skill-chip">
+                <span class="skill-chip-name">Hardware Integration</span>
+                <span class="skill-chip-note">CV + IoT Automation</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 8. Tools & Practices -->
+          <div class="skill-category-card">
+            <div class="skill-category-header">
+              <span class="skill-category-icon" aria-hidden="true">🛠️</span>
+              <h3 class="skill-category-title">Tools &amp; Practices</h3>
+            </div>
+            <div class="skill-chips-list">
+              <div class="skill-chip">
+                <span class="skill-chip-name">Git &amp; GitHub</span>
+                <span class="skill-chip-note">Version Control</span>
+              </div>
+              <div class="skill-chip">
+                <span class="skill-chip-name">Postman</span>
+                <span class="skill-chip-note">API Testing</span>
+              </div>
+              <div class="skill-chip">
+                <span class="skill-chip-name">JIRA</span>
+                <span class="skill-chip-note">Agile Tracking</span>
+              </div>
+              <div class="skill-chip">
+                <span class="skill-chip-name">Agile / Scrum</span>
+                <span class="skill-chip-note">Sprints &amp; Teamwork</span>
+              </div>
+              <div class="skill-chip">
+                <span class="skill-chip-name">Selenium</span>
+                <span class="skill-chip-note">Automated Testing</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Personal / Professional Skills Cloud -->
+        <div class="personal-skills-card">
+          <h3 class="personal-skills-title">Personal &amp; Professional Skills</h3>
+          <p class="personal-skills-subtitle">
+            Core personal strengths applied throughout team sprints, graduation capstone coordination, and engineering diploma programs.
+          </p>
+          <div class="personal-skills-cloud">
+            <span class="personal-skill-pill">🤝 Teamwork &amp; Collaboration</span>
+            <span class="personal-skill-pill">🧩 Problem Solving</span>
+            <span class="personal-skill-pill">💬 Communication Skills</span>
+            <span class="personal-skill-pill">⏱️ Time Management</span>
+            <span class="personal-skill-pill">🔄 Adaptability</span>
+            <span class="personal-skill-pill">🔍 Attention to Detail</span>
+            <span class="personal-skill-pill">🎤 Presentation Skills</span>
+            <span class="personal-skill-pill">📚 Self-Learning</span>
+            <span class="personal-skill-pill">💡 Creativity</span>
+            <span class="personal-skill-pill">🏃 Agile/Scrum Workflow</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ======================================================================
+         4. PROJECTS SECTION
+         ====================================================================== -->
+    <section id="projects" class="section" aria-labelledby="projects-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Featured Work</span>
+          <h2 id="projects-heading" class="section-title">Projects &amp; Application Showcase</h2>
+          <p class="section-subtitle">
+            Mobile applications showcased inside realistic phone frames alongside AI and computer vision prototypes.
+          </p>
+        </div>
+
+        <!-- Filter Buttons Bar -->
+        <div class="projects-filter-bar" role="tablist" aria-label="Project Categories">
+          <button type="button" class="filter-btn active" data-filter="all" role="tab" aria-selected="true">
+            All Projects (7)
+          </button>
+          <button type="button" class="filter-btn" data-filter="flutter" role="tab" aria-selected="false">
+            Flutter Mobile (5)
+          </button>
+          <button type="button" class="filter-btn" data-filter="python-ai" role="tab" aria-selected="false">
+            Python &amp; AI (2)
+          </button>
+        </div>
+
+
+        <!-- ==================================================================
+             FEATURED: Lost in Egypt — Graduation Project (2025–2026)
+             ================================================================== -->
+        <article class="featured-project-card" data-category="flutter" data-project-card-id="lost-in-egypt" aria-labelledby="proj-egypt-title">
+          <!-- Left: Information & Details -->
+          <div class="featured-project-info">
+            <div class="project-meta-strip">
+              <span class="badge badge-accent">Graduation Project</span>
+              <span class="tech-tag">2025–2026</span>
+              <span class="badge badge-success">Featured Capstone</span>
+            </div>
+
+            <h3 id="proj-egypt-title" class="project-title">Lost in Egypt</h3>
+            <p class="project-tagline">Smart Tourism Mobile Application</p>
+
+            <p class="project-overview">
+              A comprehensive smart tourism mobile application designed to help tourists and locals explore Egypt more easily through AI-powered trip planning, personalized recommendations, and camera landmark recognition.
+            </p>
+
+            <!-- Key Features from CV -->
+            <div class="project-features-list">
+              <div class="project-feature-item">
+                <span class="project-feature-bullet">✓</span>
+                <span><strong>AI-Powered Trip Planning:</strong> Custom daily travel routes tailored to user interests and schedules.</span>
+              </div>
+              <div class="project-feature-item">
+                <span class="project-feature-bullet">✓</span>
+                <span><strong>Camera Landmark Recognition:</strong> Point-and-scan camera identification of Egyptian monuments with historical audio.</span>
+              </div>
+              <div class="project-feature-item">
+                <span class="project-feature-bullet">✓</span>
+                <span><strong>Interactive Maps:</strong> Integrated Google Maps API with navigation, custom cultural pins, and routing.</span>
+              </div>
+              <div class="project-feature-item">
+                <span class="project-feature-bullet">✓</span>
+                <span><strong>Multilingual Support:</strong> Complete localization supporting English and Arabic audiences.</span>
+              </div>
+              <div class="project-feature-item">
+                <span class="project-feature-bullet">✓</span>
+                <span><strong>Community Features:</strong> Authentic traveler reviews, tips, and shared landmark experiences.</span>
+              </div>
+            </div>
+
+            <!-- Tech Badges -->
+            <div class="project-tags-cloud">
+              <span class="tech-tag">Flutter</span>
+              <span class="tech-tag">Firebase</span>
+              <span class="tech-tag">AI / ML</span>
+              <span class="tech-tag">Google Maps API</span>
+              <span class="tech-tag">Computer Vision</span>
+            </div>
+
+            <!-- Action Buttons -->
+            <div class="project-actions">
+              <button type="button" class="btn btn-primary" data-modal-target="modal-lost-in-egypt">
+                <span>View Full Case Study</span>
+                <span aria-hidden="true">📖</span>
+              </button>
+
+              <a href="https://github.com/fagerhu03" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                <span>GitHub Profile</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Right: Interactive Mobile Phone Mockup -->
+          <div class="phone-mockup-wrapper">
+            <div class="phone-frame" role="region" aria-label="Interactive Phone Preview for Lost in Egypt">
+              <!-- Dynamic Island -->
+              <div class="phone-island" aria-hidden="true">
+                <span class="phone-island-cam"></span>
+                <span class="phone-island-sensor"></span>
+              </div>
+
+              <!-- Phone Screen Canvas -->
+              <div class="phone-screen">
+                <img 
+                  src="assets/images/projects/lost-in-egypt-1.svg" 
+                  alt="Lost in Egypt - AI Trip Planning and Explore Screen" 
+                  class="gallery-screen-img"
+                  width="375"
+                  height="812"
+                  loading="lazy"
+                >
+              </div>
+
+              <!-- Home Swipe Bar -->
+              <div class="phone-home-indicator" aria-hidden="true"></div>
+            </div>
+
+            <!-- Gallery Controls -->
+            <div class="gallery-controls">
+              <button type="button" class="gallery-btn" data-gallery-action="prev" data-project-id="lost-in-egypt" aria-label="Previous screenshot for Lost in Egypt">
+                ‹
+              </button>
+
+              <div class="gallery-dots" role="tablist" aria-label="Screenshots for Lost in Egypt">
+                <button type="button" class="gallery-dot active" data-gallery-action="dot" data-project-id="lost-in-egypt" data-slide-index="0" aria-label="View Screen 1: Explore &amp; AI Trip Planner" aria-selected="true"></button>
+                <button type="button" class="gallery-dot" data-gallery-action="dot" data-project-id="lost-in-egypt" data-slide-index="1" aria-label="View Screen 2: AI Camera Landmark Scanner" aria-selected="false"></button>
+                <button type="button" class="gallery-dot" data-gallery-action="dot" data-project-id="lost-in-egypt" data-slide-index="2" aria-label="View Screen 3: Interactive Maps &amp; Community Stories" aria-selected="false"></button>
+              </div>
+
+              <button type="button" class="gallery-btn" data-gallery-action="next" data-project-id="lost-in-egypt" aria-label="Next screenshot for Lost in Egypt">
+                ›
+              </button>
+            </div>
+
+            <p class="gallery-caption">Personalized AI trip itinerary and curated Egyptian destination discovery.</p>
+          </div>
+        </article>
+
+
+        <!-- ==================================================================
+             PROJECTS GRID: Mobile Apps & AI Systems
+             ================================================================== -->
+        <div class="projects-grid">
+
+          <!-- PROJECT 2: ToDo-List App (2025) -->
+          <article class="project-card" data-category="flutter" data-project-card-id="todo-list-app" aria-labelledby="proj-todo-title">
+            <div class="project-preview-container">
+              <div class="phone-mockup-wrapper">
+                <div class="phone-frame">
+                  <div class="phone-island" aria-hidden="true">
+                    <span class="phone-island-cam"></span>
+                    <span class="phone-island-sensor"></span>
+                  </div>
+                  <div class="phone-screen">
+                    <img 
+                      src="assets/images/projects/todo-app-1.svg" 
+                      alt="ToDo-List App - Event Dashboard and Hive Offline Status" 
+                      class="gallery-screen-img"
+                      width="375"
+                      height="812"
+                      loading="lazy"
+                    >
+                  </div>
+                  <div class="phone-home-indicator" aria-hidden="true"></div>
+                </div>
+
+                <div class="gallery-controls">
+                  <button type="button" class="gallery-btn" data-gallery-action="prev" data-project-id="todo-list-app" aria-label="Previous screenshot for ToDo-List App">‹</button>
+                  <div class="gallery-dots">
+                    <button type="button" class="gallery-dot active" data-gallery-action="dot" data-project-id="todo-list-app" data-slide-index="0" aria-label="Screen 1: Dashboard &amp; Hive Cache" aria-selected="true"></button>
+                    <button type="button" class="gallery-dot" data-gallery-action="dot" data-project-id="todo-list-app" data-slide-index="1" aria-label="Screen 2: Event Details &amp; Notifications" aria-selected="false"></button>
+                  </div>
+                  <button type="button" class="gallery-btn" data-gallery-action="next" data-project-id="todo-list-app" aria-label="Next screenshot for ToDo-List App">›</button>
+                </div>
+                <p class="gallery-caption">Event planning dashboard with real-time Firebase &amp; Hive synchronization.</p>
+              </div>
+            </div>
+
+            <div class="project-meta-strip">
+              <span class="badge badge-accent">Mobile App</span>
+              <span class="tech-tag">2025</span>
+            </div>
+
+            <h3 id="proj-todo-title" class="project-title" style="font-size: var(--text-xl);">ToDo-List App</h3>
+            <p class="project-tagline" style="font-size: var(--text-sm);">Event Planning with Real-Time Updates &amp; Offline Support</p>
+            <p class="project-overview">
+              Developed an event planning app featuring live updates, Hive local storage persistence, user authentication, dynamic search, and notification reminders.
+            </p>
+
+            <div class="project-tags-cloud">
+              <span class="tech-tag">Flutter</span>
+              <span class="tech-tag">Firebase</span>
+              <span class="tech-tag">Hive Local Storage</span>
+            </div>
+
+            <div class="project-actions">
+              <button type="button" class="btn btn-secondary btn-sm" data-modal-target="modal-todo-app">
+                <span>View Details</span>
+              </button>
+            </div>
+          </article>
+
+
+          <!-- PROJECT 3: Movie App (2025) -->
+          <article class="project-card" data-category="flutter" data-project-card-id="movie-app" aria-labelledby="proj-movie-title">
+            <div class="project-preview-container">
+              <div class="phone-mockup-wrapper">
+                <div class="phone-frame">
+                  <div class="phone-island" aria-hidden="true">
+                    <span class="phone-island-cam"></span>
+                    <span class="phone-island-sensor"></span>
+                  </div>
+                  <div class="phone-screen">
+                    <img 
+                      src="assets/images/projects/movie-app-1.svg" 
+                      alt="Movie App - Trending Carousel and REST API Discovery" 
+                      class="gallery-screen-img"
+                      width="375"
+                      height="812"
+                      loading="lazy"
+                    >
+                  </div>
+                  <div class="phone-home-indicator" aria-hidden="true"></div>
+                </div>
+
+                <div class="gallery-controls">
+                  <button type="button" class="gallery-btn" data-gallery-action="prev" data-project-id="movie-app" aria-label="Previous screenshot for Movie App">‹</button>
+                  <div class="gallery-dots">
+                    <button type="button" class="gallery-dot active" data-gallery-action="dot" data-project-id="movie-app" data-slide-index="0" aria-label="Screen 1: Trending &amp; REST Feeds" aria-selected="true"></button>
+                    <button type="button" class="gallery-dot" data-gallery-action="dot" data-project-id="movie-app" data-slide-index="1" aria-label="Screen 2: Details &amp; Favorites Cache" aria-selected="false"></button>
+                  </div>
+                  <button type="button" class="gallery-btn" data-gallery-action="next" data-project-id="movie-app" aria-label="Next screenshot for Movie App">›</button>
+                </div>
+                <p class="gallery-caption">Movie discovery feed with genre filter chips and paginated REST data.</p>
+              </div>
+            </div>
+
+            <div class="project-meta-strip">
+              <span class="badge badge-accent">Mobile App</span>
+              <span class="tech-tag">2025</span>
+            </div>
+
+            <h3 id="proj-movie-title" class="project-title" style="font-size: var(--text-xl);">Movie App</h3>
+            <p class="project-tagline" style="font-size: var(--text-sm);">RESTful Movie Discovery &amp; Caching</p>
+            <p class="project-overview">
+              Integrated external REST APIs to fetch movies, designed a responsive adaptive UI with search/filter options, pagination, and offline favorites caching.
+            </p>
+
+            <div class="project-tags-cloud">
+              <span class="tech-tag">Flutter</span>
+              <span class="tech-tag">REST API</span>
+              <span class="tech-tag">Adaptive UI</span>
+              <span class="tech-tag">Caching</span>
+            </div>
+
+            <div class="project-actions">
+              <button type="button" class="btn btn-secondary btn-sm" data-modal-target="modal-movie-app">
+                <span>View Details</span>
+              </button>
+            </div>
+          </article>
+
+
+          <!-- PROJECT 4: Muslim App (2025) -->
+          <article class="project-card" data-category="flutter" data-project-card-id="muslim-app" aria-labelledby="proj-muslim-title">
+            <div class="project-preview-container">
+              <div class="phone-mockup-wrapper">
+                <div class="phone-frame">
+                  <div class="phone-island" aria-hidden="true">
+                    <span class="phone-island-cam"></span>
+                    <span class="phone-island-sensor"></span>
+                  </div>
+                  <div class="phone-screen">
+                    <img 
+                      src="assets/images/projects/muslim-app-1.svg" 
+                      alt="Muslim App - Prayer Times and Daily Schedule" 
+                      class="gallery-screen-img"
+                      width="375"
+                      height="812"
+                      loading="lazy"
+                    >
+                  </div>
+                  <div class="phone-home-indicator" aria-hidden="true"></div>
+                </div>
+
+                <div class="gallery-controls">
+                  <button type="button" class="gallery-btn" data-gallery-action="prev" data-project-id="muslim-app" aria-label="Previous screenshot for Muslim App">‹</button>
+                  <div class="gallery-dots">
+                    <button type="button" class="gallery-dot active" data-gallery-action="dot" data-project-id="muslim-app" data-slide-index="0" aria-label="Screen 1: Prayer Times" aria-selected="true"></button>
+                    <button type="button" class="gallery-dot" data-gallery-action="dot" data-project-id="muslim-app" data-slide-index="1" aria-label="Screen 2: Quran &amp; Sebha" aria-selected="false"></button>
+                  </div>
+                  <button type="button" class="gallery-btn" data-gallery-action="next" data-project-id="muslim-app" aria-label="Next screenshot for Muslim App">›</button>
+                </div>
+                <p class="gallery-caption">Precise prayer schedule with countdown and Adhan notification alerts.</p>
+              </div>
+            </div>
+
+            <div class="project-meta-strip">
+              <span class="badge badge-accent">Mobile App</span>
+              <span class="tech-tag">2025</span>
+            </div>
+
+            <h3 id="proj-muslim-title" class="project-title" style="font-size: var(--text-xl);">Muslim App</h3>
+            <p class="project-tagline" style="font-size: var(--text-sm);">Islamic Companion Built with Clean Architecture</p>
+            <p class="project-overview">
+              Created an Islamic application featuring Quran content, accurate prayer times, electronic sebha, and localization using clean architecture and reusable Flutter components.
+            </p>
+
+            <div class="project-tags-cloud">
+              <span class="tech-tag">Flutter</span>
+              <span class="tech-tag">Dart</span>
+              <span class="tech-tag">Clean Architecture</span>
+              <span class="tech-tag">Localization</span>
+            </div>
+
+            <div class="project-actions">
+              <button type="button" class="btn btn-secondary btn-sm" data-modal-target="modal-muslim-app">
+                <span>View Details</span>
+              </button>
+            </div>
+          </article>
+
+
+          <!-- PROJECT 5: My Shopping App (2025) -->
+          <article class="project-card" data-category="flutter" data-project-card-id="shopping-app" aria-labelledby="proj-shop-title">
+            <div class="project-preview-container">
+              <div class="phone-mockup-wrapper">
+                <div class="phone-frame">
+                  <div class="phone-island" aria-hidden="true">
+                    <span class="phone-island-cam"></span>
+                    <span class="phone-island-sensor"></span>
+                  </div>
+                  <div class="phone-screen">
+                    <img 
+                      src="assets/images/projects/shopping-app-1.svg" 
+                      alt="My Shopping App - Product Catalog and Deals Grid" 
+                      class="gallery-screen-img"
+                      width="375"
+                      height="812"
+                      loading="lazy"
+                    >
+                  </div>
+                  <div class="phone-home-indicator" aria-hidden="true"></div>
+                </div>
+
+                <div class="gallery-controls">
+                  <button type="button" class="gallery-btn" data-gallery-action="prev" data-project-id="shopping-app" aria-label="Previous screenshot for My Shopping App">‹</button>
+                  <div class="gallery-dots">
+                    <button type="button" class="gallery-dot active" data-gallery-action="dot" data-project-id="shopping-app" data-slide-index="0" aria-label="Screen 1: Catalog &amp; Deals" aria-selected="true"></button>
+                    <button type="button" class="gallery-dot" data-gallery-action="dot" data-project-id="shopping-app" data-slide-index="1" aria-label="Screen 2: Cart &amp; Checkout Flow" aria-selected="false"></button>
+                  </div>
+                  <button type="button" class="gallery-btn" data-gallery-action="next" data-project-id="shopping-app" aria-label="Next screenshot for My Shopping App">›</button>
+                </div>
+                <p class="gallery-caption">Product catalog grid with Firebase backend data synchronization.</p>
+              </div>
+            </div>
+
+            <div class="project-meta-strip">
+              <span class="badge badge-accent">Mobile App</span>
+              <span class="tech-tag">2025</span>
+            </div>
+
+            <h3 id="proj-shop-title" class="project-title" style="font-size: var(--text-xl);">My Shopping App</h3>
+            <p class="project-tagline" style="font-size: var(--text-sm);">E-Commerce Experience with Firebase Backend</p>
+            <p class="project-overview">
+              Developed an e-commerce mobile application featuring a product grid, shopping cart, checkout interface flow, asset routing, and Firebase backend integration.
+            </p>
+
+            <div class="project-tags-cloud">
+              <span class="tech-tag">Flutter</span>
+              <span class="tech-tag">Dart</span>
+              <span class="tech-tag">Firebase Backend</span>
+              <span class="tech-tag">UI/UX</span>
+            </div>
+
+            <div class="project-actions">
+              <button type="button" class="btn btn-secondary btn-sm" data-modal-target="modal-shopping-app">
+                <span>View Details</span>
+              </button>
+            </div>
+          </article>
+
+
+          <!-- PROJECT 6: AI Chat-bot (2023) - Desktop Window Mockup -->
+          <article class="project-card" data-category="python-ai" data-project-card-id="ai-chatbot" aria-labelledby="proj-chatbot-title">
+            <div class="project-preview-container">
+              <div class="desktop-mockup-wrapper">
+                <div class="desktop-header">
+                  <div class="traffic-dots" aria-hidden="true">
+                    <span class="traffic-dot red"></span>
+                    <span class="traffic-dot yellow"></span>
+                    <span class="traffic-dot green"></span>
+                  </div>
+                  <span class="desktop-title">NLP Assistant Studio • Python / Flask</span>
+                </div>
+                <div class="desktop-screen">
+                  <img 
+                    src="assets/images/projects/ai-chatbot-1.svg" 
+                    alt="AI Chatbot - Conversational Interface and NLP Pipeline" 
+                    class="gallery-screen-img"
+                    width="600"
+                    height="400"
+                    loading="lazy"
+                  >
+                </div>
+
+                <div class="gallery-controls" style="padding: 0 1rem 0.75rem;">
+                  <button type="button" class="gallery-btn" data-gallery-action="prev" data-project-id="ai-chatbot" aria-label="Previous screenshot for AI Chat-bot">‹</button>
+                  <div class="gallery-dots">
+                    <button type="button" class="gallery-dot active" data-gallery-action="dot" data-project-id="ai-chatbot" data-slide-index="0" aria-label="Screen 1: Dialogue &amp; Intent Pipeline" aria-selected="true"></button>
+                    <button type="button" class="gallery-dot" data-gallery-action="dot" data-project-id="ai-chatbot" data-slide-index="1" aria-label="Screen 2: Flask REST API JSON Inspector" aria-selected="false"></button>
+                  </div>
+                  <button type="button" class="gallery-btn" data-gallery-action="next" data-project-id="ai-chatbot" aria-label="Next screenshot for AI Chat-bot">›</button>
+                </div>
+                <p class="gallery-caption" style="margin-left: auto; margin-right: auto;">Chatbot dialogue interface demonstrating intent classification metrics.</p>
+              </div>
+            </div>
+
+            <div class="project-meta-strip">
+              <span class="badge badge-accent">AI &amp; NLP</span>
+              <span class="tech-tag">2023</span>
+            </div>
+
+            <h3 id="proj-chatbot-title" class="project-title" style="font-size: var(--text-xl);">AI Chat-bot</h3>
+            <p class="project-tagline" style="font-size: var(--text-sm);">Intent-Classified Conversational Assistant Deployed via Flask</p>
+            <p class="project-overview">
+              Built a conversational chatbot with NLTK/spaCy trained on 500+ Q&amp;A pairs. Enhanced accuracy by 35% using intent classification and deployed with a Flask API for web integration.
+            </p>
+
+            <div class="project-tags-cloud">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Flask</span>
+              <span class="tech-tag">NLP</span>
+              <span class="tech-tag">NLTK</span>
+              <span class="tech-tag">spaCy</span>
+            </div>
+
+            <div class="project-actions">
+              <button type="button" class="btn btn-secondary btn-sm" data-modal-target="modal-chatbot-app">
+                <span>View Details</span>
+              </button>
+            </div>
+          </article>
+
+
+          <!-- PROJECT 7: Computer Vision Object Detection (2023) - Desktop Window Mockup -->
+          <article class="project-card" data-category="python-ai" data-project-card-id="cv-object-detection" aria-labelledby="proj-cv-title">
+            <div class="project-preview-container">
+              <div class="desktop-mockup-wrapper">
+                <div class="desktop-header">
+                  <div class="traffic-dots" aria-hidden="true">
+                    <span class="traffic-dot red"></span>
+                    <span class="traffic-dot yellow"></span>
+                    <span class="traffic-dot green"></span>
+                  </div>
+                  <span class="desktop-title">OpenCV Video Stream • Haar &amp; HOG+SVM</span>
+                </div>
+                <div class="desktop-screen">
+                  <img 
+                    src="assets/images/projects/cv-detection-1.svg" 
+                    alt="Computer Vision - Real-time Webcam Feed and Bounding Boxes" 
+                    class="gallery-screen-img"
+                    width="600"
+                    height="400"
+                    loading="lazy"
+                  >
+                </div>
+
+                <div class="gallery-controls" style="padding: 0 1rem 0.75rem;">
+                  <button type="button" class="gallery-btn" data-gallery-action="prev" data-project-id="cv-object-detection" aria-label="Previous screenshot for Computer Vision Detection">‹</button>
+                  <div class="gallery-dots">
+                    <button type="button" class="gallery-dot active" data-gallery-action="dot" data-project-id="cv-object-detection" data-slide-index="0" aria-label="Screen 1: Real-Time Webcam Feed" aria-selected="true"></button>
+                    <button type="button" class="gallery-dot" data-gallery-action="dot" data-project-id="cv-object-detection" data-slide-index="1" aria-label="Screen 2: Preprocessing Pipeline &amp; IoT Relays" aria-selected="false"></button>
+                  </div>
+                  <button type="button" class="gallery-btn" data-gallery-action="next" data-project-id="cv-object-detection" aria-label="Next screenshot for Computer Vision Detection">›</button>
+                </div>
+                <p class="gallery-caption" style="margin-left: auto; margin-right: auto;">Real-time webcam feed with live Haar &amp; HOG+SVM detection bounding boxes.</p>
+              </div>
+            </div>
+
+            <div class="project-meta-strip">
+              <span class="badge badge-accent">Computer Vision</span>
+              <span class="tech-tag">2023</span>
+            </div>
+
+            <h3 id="proj-cv-title" class="project-title" style="font-size: var(--text-xl);">Computer Vision Object Detection</h3>
+            <p class="project-tagline" style="font-size: var(--text-sm);">Real-Time Detection &amp; IoT Microcontroller Integration</p>
+            <p class="project-overview">
+              Implemented object detection using Haar cascades and HOG+SVM algorithms. Applied stream preprocessing for accuracy on real-time webcam feeds and integrated into IoT automation prototypes.
+            </p>
+
+            <div class="project-tags-cloud">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">OpenCV</span>
+              <span class="tech-tag">Haar Cascades</span>
+              <span class="tech-tag">HOG+SVM</span>
+              <span class="tech-tag">IoT Integration</span>
+            </div>
+
+            <div class="project-actions">
+              <button type="button" class="btn btn-secondary btn-sm" data-modal-target="modal-cv-app">
+                <span>View Details</span>
+              </button>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ======================================================================
+         5. EXPERIENCE & TRAINING SECTION
+         ====================================================================== -->
+    <section id="experience" class="section" aria-labelledby="experience-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Career &amp; Learning Journey</span>
+          <h2 id="experience-heading" class="section-title">Experience &amp; Training Programs</h2>
+          <p class="section-subtitle">
+            Professional technical diplomas, industry summer camps, and engineering training programs completed across leading organizations.
+          </p>
+        </div>
+
+        <div class="experience-timeline" role="list">
+          
+          <!-- 1. Route Academy -->
+          <div class="timeline-item" role="listitem">
+            <span class="timeline-dot" aria-hidden="true"></span>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-role">Diploma in Mobile Development</h3>
+                  <p class="timeline-org">Route Academy</p>
+                </div>
+                <span class="timeline-period">Apr 2025 – Sep 2025</span>
+              </div>
+              <ul class="timeline-bullets">
+                <li>Learned cross-platform mobile development with Flutter, using Firebase for backend services, Hive for local storage, and pub.dev libraries for UI/UX.</li>
+                <li>Built mobile applications integrating RESTful APIs, authentication, and real-time features.</li>
+                <li>Applied agile practices, teamwork, and deployment workflows to simulate real-world production projects.</li>
+              </ul>
+              <div class="project-tags-cloud">
+                <span class="tech-tag">Flutter</span>
+                <span class="tech-tag">Firebase</span>
+                <span class="tech-tag">Hive</span>
+                <span class="tech-tag">REST APIs</span>
+                <span class="tech-tag">Agile Practices</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2. Microsoft x Sprints -->
+          <div class="timeline-item" role="listitem">
+            <span class="timeline-dot" aria-hidden="true"></span>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-role">Mobile Development Summer Camp</h3>
+                  <p class="timeline-org">Microsoft x Sprints</p>
+                </div>
+                <span class="timeline-period">Summer 2025</span>
+              </div>
+              <ul class="timeline-bullets">
+                <li>Built mobile apps in Flutter/Dart with Firebase integration.</li>
+                <li>Focused on UI/UX design, state management, and publishing workflow.</li>
+                <li>Presented app demos to mentors, receiving direct technical feedback on design patterns and architecture.</li>
+              </ul>
+              <div class="project-tags-cloud">
+                <span class="tech-tag">Flutter</span>
+                <span class="tech-tag">Dart</span>
+                <span class="tech-tag">Firebase</span>
+                <span class="tech-tag">State Management</span>
+                <span class="tech-tag">UI/UX</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3. AOI (Arab Organization for Industrialization) -->
+          <div class="timeline-item" role="listitem">
+            <span class="timeline-dot" aria-hidden="true"></span>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-role">Computer Vision and IoT Training</h3>
+                  <p class="timeline-org">AOI (Arab Organization for Industrialization)</p>
+                </div>
+                <span class="timeline-period">Summer 2025</span>
+              </div>
+              <ul class="timeline-bullets">
+                <li>Integrated sensors and microcontrollers with Python/OpenCV for connected IoT systems.</li>
+                <li>Created smart object-detection and automation prototypes.</li>
+                <li>Delivered a working demonstration combining physical hardware and AI vision.</li>
+              </ul>
+              <div class="project-tags-cloud">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">OpenCV</span>
+                <span class="tech-tag">Microcontrollers</span>
+                <span class="tech-tag">IoT Sensors</span>
+                <span class="tech-tag">Hardware Automation</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 4. We Telecom - Software Testing -->
+          <div class="timeline-item" role="listitem">
+            <span class="timeline-dot" aria-hidden="true"></span>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-role">Software Testing Training</h3>
+                  <p class="timeline-org">We Telecom</p>
+                </div>
+                <span class="timeline-period">Summer 2024</span>
+              </div>
+              <ul class="timeline-bullets">
+                <li>Performed manual and automated testing using Selenium and JIRA.</li>
+                <li>Designed comprehensive test cases and tracked issues across development cycles.</li>
+                <li>Ensured product quality through regression and performance testing.</li>
+              </ul>
+              <div class="project-tags-cloud">
+                <span class="tech-tag">Selenium</span>
+                <span class="tech-tag">JIRA</span>
+                <span class="tech-tag">Manual Testing</span>
+                <span class="tech-tag">Automated Testing</span>
+                <span class="tech-tag">Regression Testing</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 5. We Telecom - Cloud Computing -->
+          <div class="timeline-item" role="listitem">
+            <span class="timeline-dot" aria-hidden="true"></span>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-role">Cloud Computing Training</h3>
+                  <p class="timeline-org">We Telecom</p>
+                </div>
+                <span class="timeline-period">Summer 2023</span>
+              </div>
+              <ul class="timeline-bullets">
+                <li>Deployed and optimized applications on Google Cloud Platform.</li>
+                <li>Learned cloud storage, IAM policies, and scalable architecture.</li>
+                <li>Worked on practical enterprise labs simulating cloud apps.</li>
+              </ul>
+              <div class="project-tags-cloud">
+                <span class="tech-tag">Google Cloud Platform</span>
+                <span class="tech-tag">IAM Policies</span>
+                <span class="tech-tag">Cloud Storage</span>
+                <span class="tech-tag">Scalable Architecture</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 6. Impact @ Zewail City - AI Fundamentals -->
+          <div class="timeline-item" role="listitem">
+            <span class="timeline-dot" aria-hidden="true"></span>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-role">AI Fundamentals</h3>
+                  <p class="timeline-org">Impact @ Zewail City</p>
+                </div>
+                <span class="timeline-period">Summer 2023</span>
+              </div>
+              <ul class="timeline-bullets">
+                <li>Studied ML, DL, and NLP foundations with TensorFlow and scikit-learn.</li>
+                <li>Built prototype ML models for classification and prediction tasks.</li>
+                <li>Explored ethical AI considerations and deployment challenges.</li>
+              </ul>
+              <div class="project-tags-cloud">
+                <span class="tech-tag">TensorFlow</span>
+                <span class="tech-tag">scikit-learn</span>
+                <span class="tech-tag">Machine Learning</span>
+                <span class="tech-tag">Deep Learning</span>
+                <span class="tech-tag">NLP</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ======================================================================
+         6. EDUCATION SECTION
+         ====================================================================== -->
+    <section id="education" class="section" aria-labelledby="education-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Academic Foundation</span>
+          <h2 id="education-heading" class="section-title">Education</h2>
+          <p class="section-subtitle">
+            Formal engineering education establishing rigorous algorithmic foundations, software design patterns, and systems engineering.
+          </p>
+        </div>
+
+        <div class="education-container">
+          <article class="education-card">
+            <div class="education-header">
+              <div>
+                <h3 class="education-institution">Misr University for Science and Technology</h3>
+                <p class="education-degree">B.Sc. in Computer &amp; Software Engineering</p>
+              </div>
+              <div class="education-meta">
+                <span class="badge badge-success" style="margin-bottom:0.25rem;">Graduate</span>
+                <div class="education-years">2021 – 2026</div>
+                <div class="education-location">Giza, EG</div>
+              </div>
+            </div>
+
+            <div class="education-highlights">
+              <h4>Engineering Curriculum &amp; Core Highlights</h4>
+              <ul>
+                <li>Specialized software engineering principles, system architecture, object-oriented design, and design patterns.</li>
+                <li>Extensive coursework in Data Structures, Algorithms, Database Management Systems (SQL &amp; NoSQL), Operating Systems, and Distributed Computing.</li>
+                <li>Two-semester Capstone Graduation Project (2025–2026): <em>Lost in Egypt</em> — Smart Tourism mobile application integrating Flutter, Firebase, Google Maps API, and Computer Vision.</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ======================================================================
+         7. CONTACT SECTION
+         ====================================================================== -->
+    <section id="contact" class="section" aria-labelledby="contact-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Get in Touch</span>
+          <h2 id="contact-heading" class="section-title">Contact &amp; Collaboration</h2>
+          <p class="section-subtitle">
+            Available for mobile engineering opportunities, Flutter application development, and technical collaboration.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Direct Contact Channels Column -->
+          <div class="contact-info-column">
+            <!-- Email Card -->
+            <a href="mailto:fagerhu03@gmail.com" class="contact-card" aria-label="Send email to fagerhu03@gmail.com">
+              <div class="contact-card-left">
+                <div class="contact-card-icon" aria-hidden="true">✉️</div>
+                <div>
+                  <div class="contact-card-label">Direct Email</div>
+                  <div class="contact-card-val">fagerhu03@gmail.com</div>
+                </div>
+              </div>
+              <button type="button" class="btn btn-secondary btn-sm" data-copy-text="fagerhu03@gmail.com" aria-label="Copy email address">Copy</button>
+            </a>
+
+            <!-- Phone Card -->
+            <a href="tel:+201552148113" class="contact-card" aria-label="Call +20 155 214 8113">
+              <div class="contact-card-left">
+                <div class="contact-card-icon" aria-hidden="true">📞</div>
+                <div>
+                  <div class="contact-card-label">Phone &amp; SMS</div>
+                  <div class="contact-card-val">+20 155 214 8113</div>
+                </div>
+              </div>
+              <button type="button" class="btn btn-secondary btn-sm" data-copy-text="+201552148113" aria-label="Copy phone number">Copy</button>
+            </a>
+
+            <!-- WhatsApp Card -->
+            <a href="https://wa.me/201552148113" target="_blank" rel="noopener noreferrer" class="contact-card" aria-label="Chat on WhatsApp (opens in new tab)">
+              <div class="contact-card-left">
+                <div class="contact-card-icon" aria-hidden="true">💬</div>
+                <div>
+                  <div class="contact-card-label">WhatsApp Direct</div>
+                  <div class="contact-card-val">+20 155 214 8113</div>
+                </div>
+              </div>
+              <span class="contact-action-badge">Open Chat ➔</span>
+            </a>
+
+            <!-- LinkedIn Card -->
+            <a href="https://www.linkedin.com/in/fagerhu" target="_blank" rel="noopener noreferrer" class="contact-card" aria-label="LinkedIn profile (opens in new tab)">
+              <div class="contact-card-left">
+                <div class="contact-card-icon" aria-hidden="true">💼</div>
+                <div>
+                  <div class="contact-card-label">LinkedIn</div>
+                  <div class="contact-card-val">linkedin.com/in/fagerhu</div>
+                </div>
+              </div>
+              <span class="contact-action-badge">Connect ➔</span>
+            </a>
+
+            <!-- GitHub Card -->
+            <a href="https://github.com/fagerhu03" target="_blank" rel="noopener noreferrer" class="contact-card" aria-label="GitHub profile (opens in new tab)">
+              <div class="contact-card-left">
+                <div class="contact-card-icon" aria-hidden="true">🐙</div>
+                <div>
+                  <div class="contact-card-label">GitHub</div>
+                  <div class="contact-card-val">github.com/fagerhu03</div>
+                </div>
+              </div>
+              <span class="contact-action-badge">Follow ➔</span>
+            </a>
+          </div>
+
+          <!-- Contact Form Card -->
+          <div class="contact-form-card">
+            <div class="contact-form-header">
+              <h3 class="contact-form-title">Send a Direct Message</h3>
+              <p class="contact-form-desc">Fill out your inquiry details to immediately reach out via email.</p>
+            </div>
+
+            <form id="contact-form" novalidate aria-label="Contact Form">
+              <div class="form-group">
+                <label for="contact-name" class="form-label">
+                  Your Name <span class="required" aria-hidden="true">*</span>
+                </label>
+                <input 
+                  type="text" 
+                  id="contact-name" 
+                  name="name" 
+                  class="form-control" 
+                  placeholder="e.g. Sarah Jenkins" 
+                  required 
+                  minlength="2"
+                  aria-describedby="name-error"
+                >
+                <span id="name-error" class="form-error" role="alert"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-email" class="form-label">
+                  Your Email Address <span class="required" aria-hidden="true">*</span>
+                </label>
+                <input 
+                  type="email" 
+                  id="contact-email" 
+                  name="email" 
+                  class="form-control" 
+                  placeholder="e.g. sarah@example.com" 
+                  required
+                  aria-describedby="email-error"
+                >
+                <span id="email-error" class="form-error" role="alert"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-subject" class="form-label">Subject / Purpose</label>
+                <input 
+                  type="text" 
+                  id="contact-subject" 
+                  name="subject" 
+                  class="form-control" 
+                  placeholder="e.g. Flutter Mobile Project Inquiry"
+                >
+              </div>
+
+              <div class="form-group">
+                <label for="contact-message" class="form-label">
+                  Message <span class="required" aria-hidden="true">*</span>
+                </label>
+                <textarea 
+                  id="contact-message" 
+                  name="message" 
+                  class="form-control" 
+                  placeholder="Tell me about your project, team opportunity, or timeline..." 
+                  required
+                  minlength="10"
+                  aria-describedby="message-error"
+                ></textarea>
+                <span id="message-error" class="form-error" role="alert"></span>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;">
+                <span>Prepare &amp; Send Message</span>
+                <span aria-hidden="true">✉️</span>
+              </button>
+
+              <!-- Honest Accessible Status Feedback Container -->
+              <div id="form-status-box" class="form-status" role="status" aria-live="polite"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- ========================================================================
+       MODALS: Case Studies & Project Details
+       ======================================================================== -->
+  
+  <!-- MODAL: Lost in Egypt Case Study -->
+  <div id="modal-lost-in-egypt" class="modal-backdrop" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="modal-egypt-title">
+    <div class="modal-dialog">
+      <button type="button" class="modal-close-btn" data-modal-close aria-label="Close dialog">✕</button>
+      
+      <div class="modal-header">
+        <span class="badge badge-accent" style="margin-bottom:0.5rem;">Graduation Project • 2025–2026</span>
+        <h3 id="modal-egypt-title" class="modal-title">Lost in Egypt — Case Study</h3>
+        <p class="modal-subtitle">Flutter • Firebase • AI/ML • Google Maps API • Computer Vision</p>
+      </div>
+
+      <div class="modal-body">
+        <div class="case-study-grid">
+          <div class="case-study-block">
+            <h4><span aria-hidden="true">⚠️</span> The Problem</h4>
+            <p>
+              Egypt possesses thousands of historic sites, yet international visitors and domestic travelers frequently face fragmented information, language barriers at historic sites, and difficulty identifying uncaptioned ancient monuments without hiring private guides.
+            </p>
+          </div>
+
+          <div class="case-study-block">
+            <h4><span aria-hidden="true">💡</span> The Solution</h4>
+            <p>
+              Lost in Egypt acts as an all-in-one smart tourism companion. By combining on-device computer vision for instant monument identification with AI itinerary generation, travelers receive tailored, educational exploration in their native language (English &amp; Arabic).
+            </p>
+          </div>
+        </div>
+
+        <div class="case-study-block">
+          <h4><span aria-hidden="true">🏗️</span> Technical Architecture &amp; Implementation</h4>
+          <p>
+            Developed with <strong>Flutter</strong> for fluid 60fps cross-platform mobile performance across Android and iOS. Integrated with <strong>Firebase</strong> for user profile authentication, real-time community stories, and cloud storage. The application embeds the <strong>Google Maps SDK</strong> for route rendering and waypoint geometry, coupled with on-device computer vision models for fast landmark inference.
+          </p>
+        </div>
+
+        <div class="case-study-block">
+          <h4><span aria-hidden="true">⚙️</span> Key Engineering Features</h4>
+          <ul>
+            <li><strong>AI-Powered Trip Planning:</strong> Dynamically optimizes travel routes based on days available and user interests.</li>
+            <li><strong>Camera Landmark Recognition:</strong> Computer vision model identifies ancient monuments and displays curated historical context.</li>
+            <li><strong>Interactive Maps &amp; Navigation:</strong> Real-time GPS location tracking with historic pins and directional navigation.</li>
+            <li><strong>Bilingual Localization:</strong> Full Left-to-Right (LTR) and Right-to-Left (RTL) Arabic typography and interface layout.</li>
+            <li><strong>Community Hub:</strong> Safe community space for travelers and local guides to exchange verified reviews and photos.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL: ToDo-List App Details -->
+  <div id="modal-todo-app" class="modal-backdrop" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="modal-todo-title">
+    <div class="modal-dialog">
+      <button type="button" class="modal-close-btn" data-modal-close aria-label="Close dialog">✕</button>
+      <div class="modal-header">
+        <span class="badge badge-accent">Flutter Project • 2025</span>
+        <h3 id="modal-todo-title" class="modal-title">ToDo-List App Details</h3>
+        <p class="modal-subtitle">Technologies: Flutter, Firebase, Hive</p>
+      </div>
+      <div class="modal-body">
+        <div class="case-study-block">
+          <h4><span aria-hidden="true">📋</span> Overview &amp; Capabilities</h4>
+          <p>An event-planning application featuring real-time Cloud Firestore updates and offline support powered by Hive local storage adapters.</p>
+          <ul>
+            <li>Implemented Hive for zero-latency local storage and optimized cross-platform UI.</li>
+            <li>Added user authentication, categorized search, and push notification features.</li>
+            <li>Offline-first data sync ensures modifications queue locally and push automatically upon reconnection.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL: Movie App Details -->
+  <div id="modal-movie-app" class="modal-backdrop" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="modal-movie-title">
+    <div class="modal-dialog">
+      <button type="button" class="modal-close-btn" data-modal-close aria-label="Close dialog">✕</button>
+      <div class="modal-header">
+        <span class="badge badge-accent">Flutter Project • 2025</span>
+        <h3 id="modal-movie-title" class="modal-title">Movie App Details</h3>
+        <p class="modal-subtitle">Technologies: Flutter, REST API</p>
+      </div>
+      <div class="modal-body">
+        <div class="case-study-block">
+          <h4><span aria-hidden="true">🎬</span> Overview &amp; Capabilities</h4>
+          <p>A media exploration application connected to external movie databases via clean RESTful API integration.</p>
+          <ul>
+            <li>Integrated external APIs to fetch movies and added real-time search/filter options.</li>
+            <li>Designed responsive UI with adaptive layouts, category carousels, and smooth pagination.</li>
+            <li>Implemented local favorites caching for faster performance and reduced network bandwidth.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL: Muslim App Details -->
+  <div id="modal-muslim-app" class="modal-backdrop" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="modal-muslim-title">
+    <div class="modal-dialog">
+      <button type="button" class="modal-close-btn" data-modal-close aria-label="Close dialog">✕</button>
+      <div class="modal-header">
+        <span class="badge badge-accent">Flutter Project • 2025</span>
+        <h3 id="modal-muslim-title" class="modal-title">Muslim App Details</h3>
+        <p class="modal-subtitle">Technologies: Flutter, Dart</p>
+      </div>
+      <div class="modal-body">
+        <div class="case-study-block">
+          <h4><span aria-hidden="true">🕌</span> Overview &amp; Capabilities</h4>
+          <p>An Islamic companion application built with clean architecture and modular Flutter components.</p>
+          <ul>
+            <li>Created Islamic app featuring Holy Quran surah content, calculation of daily prayer times, and Adhan alerts.</li>
+            <li>Implemented digital sebha tasbeeh counter and full localization in Arabic and English.</li>
+            <li>Applied clean architecture separating data layers, domain entities, and presentation widgets.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL: My Shopping App Details -->
+  <div id="modal-shopping-app" class="modal-backdrop" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="modal-shopping-title">
+    <div class="modal-dialog">
+      <button type="button" class="modal-close-btn" data-modal-close aria-label="Close dialog">✕</button>
+      <div class="modal-header">
+        <span class="badge badge-accent">Flutter Project • 2025</span>
+        <h3 id="modal-shopping-title" class="modal-title">My Shopping App Details</h3>
+        <p class="modal-subtitle">Technologies: Flutter, Dart, Firebase Integration</p>
+      </div>
+      <div class="modal-body">
+        <div class="case-study-block">
+          <h4><span aria-hidden="true">🛍️</span> Overview &amp; Capabilities</h4>
+          <p>An e-commerce mobile application featuring product catalog management and Firebase backend connectivity.</p>
+          <ul>
+            <li>Developed e-commerce app with product grid, interactive cart quantity stepper, and checkout interface layout.</li>
+            <li>Added app routing, asset images, and Firebase backend integration.</li>
+            <li>Focused on intuitive UI/UX and responsive layout. (Layout &amp; state demonstrated; no live payment processing implied).</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL: AI Chatbot Details -->
+  <div id="modal-chatbot-app" class="modal-backdrop" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="modal-chatbot-title">
+    <div class="modal-dialog">
+      <button type="button" class="modal-close-btn" data-modal-close aria-label="Close dialog">✕</button>
+      <div class="modal-header">
+        <span class="badge badge-accent">Python &amp; AI • 2023</span>
+        <h3 id="modal-chatbot-title" class="modal-title">AI Chat-bot Details</h3>
+        <p class="modal-subtitle">Technologies: Python, Flask, NLP, NLTK, spaCy</p>
+      </div>
+      <div class="modal-body">
+        <div class="case-study-block">
+          <h4><span aria-hidden="true">🤖</span> Overview &amp; Capabilities</h4>
+          <p>An intent-classified conversational chatbot trained for accurate domain inquiry responses.</p>
+          <ul>
+            <li>Built chatbot with NLTK/spaCy trained on 500+ curated Q&amp;A pairs.</li>
+            <li>Enhanced accuracy by 35% using intent classification pipelines.</li>
+            <li>Deployed with a lightweight Flask REST API for client web integration.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL: Computer Vision Object Detection Details -->
+  <div id="modal-cv-app" class="modal-backdrop" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="modal-cv-title">
+    <div class="modal-dialog">
+      <button type="button" class="modal-close-btn" data-modal-close aria-label="Close dialog">✕</button>
+      <div class="modal-header">
+        <span class="badge badge-accent">Computer Vision • 2023</span>
+        <h3 id="modal-cv-title" class="modal-title">Computer Vision Object Detection Details</h3>
+        <p class="modal-subtitle">Technologies: Python, OpenCV</p>
+      </div>
+      <div class="modal-body">
+        <div class="case-study-block">
+          <h4><span aria-hidden="true">👁️</span> Overview &amp; Capabilities</h4>
+          <p>A real-time computer vision system with microcontroller automation prototyping.</p>
+          <ul>
+            <li>Implemented object detection algorithms using Haar cascades and HOG+SVM.</li>
+            <li>Applied image preprocessing (resizing, grayscale, blur) for accuracy on real-time webcam feeds.</li>
+            <li>Integrated detection signals into IoT hardware prototypes for automation tasks.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ========================================================================
+       Footer
+       ======================================================================== -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-content">
+      <p class="footer-text">
+        &copy; <span id="current-year">2026</span> <strong>Fager Hussein Ahmed</strong>. All rights reserved.
+      </p>
+
+      <ul class="footer-links">
+        <li><a href="#home" class="footer-link">Home</a></li>
+        <li><a href="#about" class="footer-link">About</a></li>
+        <li><a href="#projects" class="footer-link">Projects</a></li>
+        <li><a href="#experience" class="footer-link">Experience</a></li>
+        <li><a href="#contact" class="footer-link">Contact</a></li>
+        <li><a href="assets/Fager_Hussein_Ahmed_CV.pdf" download="Fager_Hussein_Ahmed_CV.pdf" class="footer-link">Download CV (PDF)</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/data.js"></script>
+  <script src="js/theme.js"></script>
+  <script src="js/navigation.js"></script>
+  <script src="js/projects.js"></script>
+  <script src="js/contact.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 375 812" width="100%" height="100%">
+  <defs>
+    <linearGradient id="movieGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="transparent"/>
+      <stop offset="60%" stop-color="rgba(15,23,42,0.8)"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <linearGradient id="poster1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e1b4b"/>
+      <stop offset="100%" stop-color="#312e81"/>
+    </linearGradient>
+    <linearGradient id="poster2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4c0519"/>
+      <stop offset="100%" stop-color="#881337"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="375" height="812" fill="#0b0f19"/>
+
+  <!-- Top Bar -->
+  <g transform="translate(24, 52)">
+    <text x="0" y="20" font-family="'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="20" fill="#f8fafc">CineStream</text>
+    <text x="0" y="36" font-family="sans-serif" font-size="11" fill="#38bdf8">RESTful Movie Discovery API</text>
+    <circle cx="310" cy="20" r="16" fill="#1e293b"/>
+    <!-- Search icon -->
+    <circle cx="308" cy="18" r="5" fill="none" stroke="#f8fafc" stroke-width="1.5"/>
+    <line x1="312" y1="22" x2="316" y2="26" stroke="#f8fafc" stroke-width="1.5"/>
+  </g>
+
+  <!-- Hero Movie Banner -->
+  <g transform="translate(20, 100)">
+    <rect width="335" height="240" rx="20" fill="url(#poster1)"/>
+    <!-- Deep space planet artwork -->
+    <circle cx="260" cy="80" r="60" fill="#4338ca" opacity="0.4"/>
+    <circle cx="270" cy="70" r="30" fill="#6366f1" opacity="0.6"/>
+    <!-- Overlay gradient -->
+    <rect width="335" height="240" rx="20" fill="url(#movieGrad)"/>
+    
+    <!-- Hero Details -->
+    <g transform="translate(20, 140)">
+      <rect width="60" height="22" rx="6" fill="#e11d48"/>
+      <text x="30" y="15" font-family="sans-serif" font-weight="700" font-size="10" fill="#fff" text-anchor="middle">TRENDING</text>
+      
+      <text x="0" y="44" font-family="'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="20" fill="#ffffff">Interstellar Odyssey</text>
+      <text x="0" y="62" font-family="sans-serif" font-size="11" fill="#cbd5e1">Sci-Fi • 2h 49m • ★ 8.9 (IMDb)</text>
+      
+      <g transform="translate(0, 72)">
+        <rect width="110" height="24" rx="12" fill="#0284c7"/>
+        <text x="55" y="16" font-family="sans-serif" font-weight="700" font-size="10" fill="#ffffff" text-anchor="middle">▶ Watch Trailer</text>
+        
+        <rect x="120" y="0" width="70" height="24" rx="12" fill="rgba(255,255,255,0.2)"/>
+        <text x="155" y="16" font-family="sans-serif" font-weight="600" font-size="10" fill="#ffffff" text-anchor="middle">+ Favorite</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Genre Pills -->
+  <g transform="translate(20, 360)">
+    <rect x="0" y="0" width="60" height="28" rx="14" fill="#0284c7"/>
+    <text x="30" y="18" font-family="sans-serif" font-weight="700" font-size="11" fill="#fff" text-anchor="middle">All</text>
+
+    <rect x="68" y="0" width="70" height="28" rx="14" fill="#1e293b"/>
+    <text x="103" y="18" font-family="sans-serif" font-size="11" fill="#94a3b8" text-anchor="middle">Action</text>
+
+    <rect x="146" y="0" width="68" height="28" rx="14" fill="#1e293b"/>
+    <text x="180" y="18" font-family="sans-serif" font-size="11" fill="#94a3b8" text-anchor="middle">Sci-Fi</text>
+
+    <rect x="222" y="0" width="68" height="28" rx="14" fill="#1e293b"/>
+    <text x="256" y="18" font-family="sans-serif" font-size="11" fill="#94a3b8" text-anchor="middle">Drama</text>
+  </g>
+
+  <!-- Now Playing Grid -->
+  <g transform="translate(20, 408)">
+    <text x="0" y="14" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="15" fill="#f8fafc">Popular Now (REST API)</text>
+    
+    <!-- Movie Card 1 -->
+    <g transform="translate(0, 26)">
+      <rect width="102" height="150" rx="12" fill="url(#poster2)"/>
+      <rect x="6" y="6" width="36" height="18" rx="4" fill="rgba(0,0,0,0.6)"/>
+      <text x="24" y="19" font-family="sans-serif" font-weight="700" font-size="9" fill="#f59e0b" text-anchor="middle">★ 8.4</text>
+      <text x="0" y="168" font-family="sans-serif" font-weight="700" font-size="11" fill="#f8fafc">Oppenheimer</text>
+      <text x="0" y="182" font-family="sans-serif" font-size="9" fill="#64748b">History, Drama</text>
+    </g>
+
+    <!-- Movie Card 2 -->
+    <g transform="translate(116, 26)">
+      <rect width="102" height="150" rx="12" fill="#064e3b"/>
+      <rect x="6" y="6" width="36" height="18" rx="4" fill="rgba(0,0,0,0.6)"/>
+      <text x="24" y="19" font-family="sans-serif" font-weight="700" font-size="9" fill="#f59e0b" text-anchor="middle">★ 8.7</text>
+      <text x="0" y="168" font-family="sans-serif" font-weight="700" font-size="11" fill="#f8fafc">Inception</text>
+      <text x="0" y="182" font-family="sans-serif" font-size="9" fill="#64748b">Action, Sci-Fi</text>
+    </g>
+
+    <!-- Movie Card 3 -->
+    <g transform="translate(232, 26)">
+      <rect width="102" height="150" rx="12" fill="#701a75"/>
+      <rect x="6" y="6" width="36" height="18" rx="4" fill="rgba(0,0,0,0.6)"/>
+      <text x="24" y="19" font-family="sans-serif" font-weight="700" font-size="9" fill="#f59e0b" text-anchor="middle">★ 8.2</text>
+      <text x="0" y="168" font-family="sans-serif" font-weight="700" font-size="11" fill="#f8fafc">Cyber Dune</text>
+      <text x="0" y="182" font-family="sans-serif" font-size="9" fill="#64748b">Adventure</text>
+    </g>
+  </g>
+
+  <!-- Pagination / Caching Status -->
+  <g transform="translate(20, 630)">
+    <rect width="335" height="50" rx="12" fill="#151d2f" stroke="#23304a" stroke-width="1"/>
+    <text x="16" y="24" font-family="sans-serif" font-weight="600" font-size="11" fill="#38bdf8">REST API Pagination Active</text>
+    <text x="16" y="38" font-family="sans-serif" font-size="10" fill="#94a3b8">Page 1 of 24 • Local SQLite/Hive Cache Enabled</text>
+    <rect x="250" y="12" width="70" height="26" rx="8" fill="#0284c7"/>
+    <text x="285" y="28" font-family="sans-serif" font-weight="700" font-size="10" fill="#fff" text-anchor="middle">Next Page</text>
+  </g>
+
+  <!-- Bottom Nav -->
+  <g transform="translate(0, 745)">
+    <rect width="375" height="67" fill="#080c14"/>
+    <text x="60" y="36" font-family="sans-serif" font-weight="700" font-size="11" fill="#38bdf8" text-anchor="middle">Discover</text>
+    <text x="187" y="36" font-family="sans-serif" font-size="11" fill="#64748b" text-anchor="middle">Favorites (14)</text>
+    <text x="315" y="36" font-family="sans-serif" font-size="11" fill="#64748b" text-anchor="middle">Search</text>
+  </g>
+</svg>

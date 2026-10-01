@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="100%" height="100%">
+  <!-- Window Frame Mockup -->
+  <rect width="600" height="400" rx="14" fill="#0b0f19" stroke="#1e293b" stroke-width="1.5"/>
+  
+  <!-- Header Bar -->
+  <rect width="600" height="40" rx="14" fill="#0f172a"/>
+  <circle cx="20" cy="20" r="6" fill="#ef4444"/>
+  <circle cx="38" cy="20" r="6" fill="#f59e0b"/>
+  <circle cx="56" cy="20" r="6" fill="#10b981"/>
+  <text x="300" y="25" font-family="'JetBrains Mono', monospace" font-size="12" fill="#94a3b8" text-anchor="middle">OpenCV Preprocessing Pipeline &amp; IoT Embedded Integration</text>
+
+  <!-- 4-Stage Image Preprocessing Pipeline Strip -->
+  <g transform="translate(16, 52)">
+    <!-- Stage 1: Raw RGB Feed -->
+    <g transform="translate(0, 0)">
+      <rect width="134" height="150" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+      <rect x="0" y="0" width="134" height="110" rx="8" fill="#151d2f"/>
+      <circle cx="67" cy="55" r="30" fill="#0284c7" opacity="0.6"/>
+      <text x="67" y="130" font-family="'JetBrains Mono', monospace" font-size="10" fill="#f8fafc" text-anchor="middle">1. RAW RGB</text>
+      <text x="67" y="142" font-family="sans-serif" font-size="9" fill="#94a3b8" text-anchor="middle">1920x1080 Feed</text>
+    </g>
+
+    <!-- Stage 2: Grayscale Conversion -->
+    <g transform="translate(144, 0)">
+      <rect width="134" height="150" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+      <rect x="0" y="0" width="134" height="110" rx="8" fill="#334155"/>
+      <circle cx="67" cy="55" r="30" fill="#64748b"/>
+      <text x="67" y="130" font-family="'JetBrains Mono', monospace" font-size="10" fill="#f8fafc" text-anchor="middle">2. GRAYSCALE</text>
+      <text x="67" y="142" font-family="sans-serif" font-size="9" fill="#94a3b8" text-anchor="middle">cv2.cvtColor</text>
+    </g>
+
+    <!-- Stage 3: Gaussian Blur & Threshold -->
+    <g transform="translate(288, 0)">
+      <rect width="134" height="150" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+      <rect x="0" y="0" width="134" height="110" rx="8" fill="#1e293b"/>
+      <circle cx="67" cy="55" r="32" fill="#475569" filter="blur(4px)"/>
+      <text x="67" y="130" font-family="'JetBrains Mono', monospace" font-size="10" fill="#f8fafc" text-anchor="middle">3. GAUSSIAN BLUR</text>
+      <text x="67" y="142" font-family="sans-serif" font-size="9" fill="#94a3b8" text-anchor="middle">Noise Reduction</text>
+    </g>
+
+    <!-- Stage 4: Feature Extraction / Canny -->
+    <g transform="translate(432, 0)">
+      <rect width="134" height="150" rx="8" fill="#1e293b" stroke="#0284c7" stroke-width="1.5"/>
+      <rect x="0" y="0" width="134" height="110" rx="8" fill="#030712"/>
+      <circle cx="67" cy="55" r="28" fill="none" stroke="#38bdf8" stroke-width="2"/>
+      <text x="67" y="130" font-family="'JetBrains Mono', monospace" font-weight="700" font-size="10" fill="#38bdf8" text-anchor="middle">4. HOG GRADIENTS</text>
+      <text x="67" y="142" font-family="sans-serif" font-size="9" fill="#94a3b8" text-anchor="middle">Classifier Input</text>
+    </g>
+  </g>
+
+  <!-- Bottom: Hardware Integration Telemetry (AOI Training project context) -->
+  <g transform="translate(16, 218)">
+    <rect width="568" height="166" rx="10" fill="#111827" stroke="#1f2937" stroke-width="1"/>
+    
+    <g transform="translate(20, 20)">
+      <text x="0" y="14" font-family="'JetBrains Mono', monospace" font-weight="700" font-size="12" fill="#38bdf8">EMBEDDED AUTOMATION &amp; SENSOR PIPELINE</text>
+      
+      <!-- Flow Diagram Boxes -->
+      <g transform="translate(0, 32)">
+        <!-- Step 1: Camera sensor -->
+        <rect width="115" height="56" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+        <text x="57" y="24" font-family="sans-serif" font-weight="700" font-size="11" fill="#fff" text-anchor="middle">Webcam / Sensor</text>
+        <text x="57" y="42" font-family="sans-serif" font-size="9" fill="#94a3b8" text-anchor="middle">Real-time Stream</text>
+
+        <!-- Arrow -->
+        <text x="127" y="32" font-family="sans-serif" font-size="14" fill="#38bdf8">→</text>
+
+        <!-- Step 2: Python / OpenCV -->
+        <rect x="145" y="0" width="115" height="56" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+        <text x="202" y="24" font-family="sans-serif" font-weight="700" font-size="11" fill="#fff" text-anchor="middle">Python / OpenCV</text>
+        <text x="202" y="42" font-family="sans-serif" font-size="9" fill="#94a3b8" text-anchor="middle">Haar / HOG+SVM</text>
+
+        <!-- Arrow -->
+        <text x="272" y="32" font-family="sans-serif" font-size="14" fill="#38bdf8">→</text>
+
+        <!-- Step 3: Serial / GPIO -->
+        <rect x="290" y="0" width="115" height="56" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+        <text x="347" y="24" font-family="sans-serif" font-weight="700" font-size="11" fill="#fff" text-anchor="middle">Serial / UART</text>
+        <text x="347" y="42" font-family="sans-serif" font-size="9" fill="#94a3b8" text-anchor="middle">Baud: 115200</text>
+
+        <!-- Arrow -->
+        <text x="417" y="32" font-family="sans-serif" font-size="14" fill="#38bdf8">→</text>
+
+        <!-- Step 4: Arduino / ESP Hardware -->
+        <rect x="435" y="0" width="95" height="56" rx="8" fill="#064e3b" stroke="#10b981" stroke-width="1"/>
+        <text x="482" y="24" font-family="sans-serif" font-weight="700" font-size="11" fill="#ecfdf5" text-anchor="middle">Arduino / ESP</text>
+        <text x="482" y="42" font-family="sans-serif" font-size="9" fill="#a7f3d0" text-anchor="middle">Relay Trigger</text>
+      </g>
+
+      <text x="0" y="125" font-family="sans-serif" font-size="10" fill="#94a3b8">Tested with physical microcontroller breadboard during AOI (Arab Organization for Industrialization) training.</text>
+    </g>
+  </g>
+</svg>

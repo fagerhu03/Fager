@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="100%" height="100%">
+  <!-- Window Mockup -->
+  <rect width="600" height="400" rx="14" fill="#0b0f19" stroke="#1e293b" stroke-width="1.5"/>
+  
+  <!-- Window Header Bar -->
+  <rect width="600" height="40" rx="14" fill="#0f172a"/>
+  <circle cx="20" cy="20" r="6" fill="#ef4444"/>
+  <circle cx="38" cy="20" r="6" fill="#f59e0b"/>
+  <circle cx="56" cy="20" r="6" fill="#10b981"/>
+  <text x="300" y="25" font-family="'JetBrains Mono', monospace" font-size="12" fill="#94a3b8" text-anchor="middle">OpenCV Real-Time Vision Feed • Haar Cascades &amp; HOG+SVM</text>
+
+  <!-- Left: Live Video Feed Simulation -->
+  <g transform="translate(16, 52)">
+    <rect width="365" height="332" rx="10" fill="#030712" stroke="#1f2937" stroke-width="1"/>
+    
+    <!-- Video Feed Background Simulated Road/Room -->
+    <path d="M 0 240 L 365 240 L 365 332 L 0 332 Z" fill="#1e293b" opacity="0.4"/>
+    
+    <!-- Target Object 1: Person Detected via HOG+SVM -->
+    <g transform="translate(45, 70)">
+      <!-- Silhouette -->
+      <circle cx="40" cy="30" r="16" fill="#334155"/>
+      <path d="M 22 55 C 22 45, 58 45, 58 55 L 56 150 L 24 150 Z" fill="#334155"/>
+      
+      <!-- Bounding Box -->
+      <rect x="0" y="0" width="80" height="175" rx="4" fill="rgba(56,189,248,0.15)" stroke="#38bdf8" stroke-width="2"/>
+      
+      <!-- Label -->
+      <rect x="0" y="-22" width="75" height="20" rx="4" fill="#0284c7"/>
+      <text x="37" y="-8" font-family="'JetBrains Mono', monospace" font-weight="700" font-size="9" fill="#ffffff" text-anchor="middle">person: 0.94</text>
+    </g>
+
+    <!-- Target Object 2: Vehicle Detected via Haar Cascade -->
+    <g transform="translate(165, 110)">
+      <!-- Car shape silhouette -->
+      <rect x="15" y="45" width="145" height="60" rx="12" fill="#334155"/>
+      <path d="M 40 45 L 60 15 L 120 15 L 140 45 Z" fill="#1e293b"/>
+      <circle cx="45" cy="105" r="16" fill="#0f172a"/>
+      <circle cx="130" cy="105" r="16" fill="#0f172a"/>
+      
+      <!-- Bounding Box -->
+      <rect x="0" y="0" width="175" height="135" rx="4" fill="rgba(16,185,129,0.15)" stroke="#10b981" stroke-width="2"/>
+      
+      <!-- Label -->
+      <rect x="0" y="-22" width="85" height="20" rx="4" fill="#059669"/>
+      <text x="42" y="-8" font-family="'JetBrains Mono', monospace" font-weight="700" font-size="9" fill="#ffffff" text-anchor="middle">vehicle: 0.91</text>
+    </g>
+
+    <!-- Live HUD Overlay Stats -->
+    <g transform="translate(14, 18)">
+      <rect width="130" height="42" rx="6" fill="rgba(15,23,42,0.8)"/>
+      <text x="10" y="16" font-family="'JetBrains Mono', monospace" font-size="10" fill="#22c55e">● LIVE FEED (WEBCAM)</text>
+      <text x="10" y="32" font-family="'JetBrains Mono', monospace" font-size="10" fill="#e2e8f0">FPS: 29.8 • 1080p</text>
+    </g>
+  </g>
+
+  <!-- Right: Detection Telemetry & IoT Integration -->
+  <g transform="translate(395, 52)">
+    <rect width="189" height="332" rx="10" fill="#111827" stroke="#1f2937" stroke-width="1"/>
+    
+    <g transform="translate(14, 16)">
+      <text x="0" y="14" font-family="'JetBrains Mono', monospace" font-weight="700" font-size="11" fill="#38bdf8">VISION PIPELINE</text>
+      
+      <!-- Model 1 -->
+      <g transform="translate(0, 26)">
+        <rect width="161" height="50" rx="8" fill="#1e293b"/>
+        <text x="10" y="18" font-family="sans-serif" font-weight="600" font-size="10" fill="#cbd5e1">Haar Cascade</text>
+        <text x="10" y="34" font-family="'JetBrains Mono', monospace" font-size="10" fill="#38bdf8">Rapid Face/Car Class</text>
+      </g>
+
+      <!-- Model 2 -->
+      <g transform="translate(0, 84)">
+        <rect width="161" height="50" rx="8" fill="#1e293b"/>
+        <text x="10" y="18" font-family="sans-serif" font-weight="600" font-size="10" fill="#cbd5e1">HOG + Linear SVM</text>
+        <text x="10" y="34" font-family="'JetBrains Mono', monospace" font-size="10" fill="#38bdf8">Pedestrian Gradients</text>
+      </g>
+
+      <!-- IoT Trigger Signal -->
+      <text x="0" y="158" font-family="'JetBrains Mono', monospace" font-weight="700" font-size="10" fill="#cbd5e1">HARDWARE AUTOMATION</text>
+      
+      <g transform="translate(0, 170)">
+        <rect width="161" height="70" rx="8" fill="#0f172a" stroke="#0284c7" stroke-width="1"/>
+        <text x="10" y="20" font-family="sans-serif" font-size="10" fill="#94a3b8">Target Detected: YES</text>
+        <text x="10" y="38" font-family="'JetBrains Mono', monospace" font-size="10" fill="#10b981">UART: TX PIN HIGH</text>
+        <text x="10" y="56" font-family="sans-serif" font-size="9" fill="#38bdf8">ESP/Arduino Relay ON</text>
+      </g>
+
+      <!-- OpenCV Version -->
+      <g transform="translate(0, 252)">
+        <rect width="161" height="34" rx="6" fill="#1e293b"/>
+        <text x="10" y="22" font-family="'JetBrains Mono', monospace" font-size="10" fill="#94a3b8">OpenCV 4.x / Python</text>
+      </g>
+    </g>
+  </g>
+</svg>
